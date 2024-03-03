@@ -1,0 +1,24 @@
+body{
+  margin: 0;
+  padding: 0;
+  
+  background-color: #bfe1c4 ;
+  font: 14px/26px 'Bungee', Helvetica, Arial, sans-serif;
+  color: black;
+
+  
+}
+
+#openModel{
+ border: none;
+ outline: none;
+ padding: 20px 30px;
+ 
+ border-radius: 10px;
+margin: 400px 0 0 900px;
+
+}
+
+#innerModelP{
+  
+}

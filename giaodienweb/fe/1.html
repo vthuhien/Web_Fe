@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOCUMENT</title>
+    <link rel="stylesheet" href="./1.css">
+</head>
+<body>
+    <div id="header">
+        <div id="div1">
+            <div id="imgOfdiv1">
+                <img src="C:\Users\Admin\Desktop\thuhien\imgWeb\header\div1\3.webp" alt="">
+            <img src="C:\Users\Admin\Desktop\thuhien\imgWeb\header\div1\2.webp" alt="">
+            <img src="C:\Users\Admin\Desktop\thuhien\imgWeb\header\div1\1.webp" alt="">
+            </div>
+            
+        </div>
+        <div id="div2">
+            <div id="elementOfdiv2">
+                <span id="logo">
+                   
+                    <img src="C:\Users\Admin\Desktop\thuhien\imgWeb\header\div2\logoFix.png" alt=""; width="170px"; height="45px">
+                   
+                </span>
+                
+            <div id="AllButton">
+                <div id="Element">
+                    
+                    <div class="dropdown-test">
+                        <div onclick="testFunction()" class="btnDanhMuc">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAAAsTAAALEwEAmpwYAAACv0lEQVR4nO2cX2oTURTGrwg+iRtoVRB0CT5YEFyGrz66DEF9chuNpfahWDdgcQddQg1IrUYfzMz3BY5cvCNDaDCZP557bs4PBpq0JL/5mMm587XTEBzHcRzHcRzH0UFEdgEcAvhJUixs0RXAUVVV93MI71I7kB5BXorIjlqAAA6TyHtVkQ2JrgBOkvuBmgjSaWspvAYRuZ0CnKlJMJ0KwSjq/tQWsO5PbQHr/lQSWDVVu77OOJYZC9ADzIOtPQKL8ae2gHV/agtY9wcwS1ciu8Hulcg3NQkAkyRxYinEVIJ8SO77miJ3AEyXTwWSn0ieZvy4aWM+x30IWojI3RUBnpL8mPHjJsCpaoAA3hZQZ+3nMER2gt0h8n17lwHW/aktYN2f2gLW/eltjAfIbTwCi/GntoB1f2oLWPentoB1f3id1TvAiddZPRCvs/ohXmf1A15n9Q5w5nWW5WWAdX9qC1j3p7aAdX96neUBchuPwGL8qS1g3Z/aAtb9qS1g3R+G66xcApxYrLMakvs7NQExWme1nn8hIteCFmK0zlrah+tBCxitsxpE5Fb8Q0s1ARius+bz+T2SZ76M6QCAPQBf1KcwtQU6UNf1MwB1n1vEBoPaAhsQhwXJN63g/n6tJkVtgTURkZsAjtPAI4DnWfhTW2DDYQHgK8kn2fhTW+AfAHgM4CJ5nsUw299vfw6uu8VbI0i+FpEbRQdYt4ZFXOvFNd/yz3QJsLW9KjJAuWJYDHm1AeBRcyQWF6CsGBZDM9h+A/iRS521NCwu4uffWO81ZIBHudRZJgOsqupBWhqM8q+Z1pyKUwAP2+VAer6OgySMwKAfXfLnvrOD5nRWCvHXYrF4+p+GyF56z/NQMvX4y5iXoXQwzkL6PIY3yELaAllfylkh2zLBElnWWRbJqlC1SjaVvmWy+KVSME4zXLq+wG+RQKJ47eK4QAAAAABJRU5ErkJggg=="; width="35px"; height="35px">
+                            <p>Danh mục</p>
+                        </div>
+                        
+                        
+                    
+                </div>
+                    <div id="ViTri">
+                        <span>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA4ElEQVR4nO3YSwrCMBRG4bpDLUoHunpFsPjYgMKRgEXFtrY2jxv8z6yQC/kIHSRFoZRSSiml1JiAFXAC9sC8MBawAA7ABai6Fs2AI8+unYsTBFSPPTWd3Z67FtcvC81g+ES46r6BsmUgKYZ2hPsuvw0uWwZvwCba7t//2ba9rIshWcAwFWEBgy9ESgy+ESkwhELExARHxMBEQ4TEREeEwCRD+MQkR/jAmEFMwZhD/IIxixiDMY8YgskGMeDuYOqOM+Vk8jiJEZh8ED2Y/BBN7kkJ2AFbi89LSimllFLqz7oD6IVh8k9Y3KsAAAAASUVORK5CYII="; width="11px"; height="11px">
+                        </span>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAElElEQVR4nO1aW8hVRRQexaKLt7KiqIegsoKKjKKXQC2iC0UYXUSffBWKXsLKhD+th0J6q+gG9SBFUUkSRPkQYSR/9RtahAVhROAlsiw7M983umJx1tDu7z9773POjJ4/+mDD4Zy112XWzLrNce5//BsiMjfGuILkiyTHAezH39iv35F8Ica4XETmuFGD9/5iki8D+JOktHkAHCb5kvf+olHwwCkkNwKgKXfUPLEWwGI1UERO1Uc/63cAHiX5mdHqO/ryUyJy0nExQleS5C5T5giATZ1O54K273c6nQsBvJYMIvmpiJzjjiVCCItsz6sCu0MIVw3KC8DVJL+1BfkxhHCFO1aeSEYA+EBEThuWp4icDuDDZExxz9iZ2FUxYlZG3icA2FrZZuXOjB7stJ1yeGIqz5D8zmQ85krAog71YA9zJpoA4BoNAAD+EJGzswvQPGFbapMrDACvm1eezZ6xNYHpSrUJsSJyFskNJHfoyupDcoLkehE5s2VAOWpemZ3NECs7dIXGm2hJ3gXgUE1G/43knS34fK70McZ7sxlitZMqsbaFESljv6OZPGV2kksAbE4JlOSyOl4A1pnxz+c0ZNwUWFy3nZInADxYo+Aao/lVRM6okbnUDNmew4Yk/IAy9d4vrBG8IXmiBb93m0Ks936h8ds3jO6TBQdlWld6k/yyyWtTrPZELxoRmWP8vMsFAB0zpGe2BfC70TRGmYqShxqqCNHWYBjdJyu515TsmaDS+WhpyNwUwWpozjWan1wukPxGmYYQLquh2WHbZUkLftcb7Re9aEIIVxrNVy4XAGyxmH5PjXLrbQU3t+VHcqwXTYxxpfF7exjdJyv5hAl+vBeNZmxLdip8TS86AA8bzUERWVAj88kmY/uGesKEb62j04xtyU4sxC7VM6OPbqfkCaO5o4HXNjOklq4vWLLTdtZrNGlQYJkmu5oS5WCTciIy3yptjR7zshliCk6YMrc20WrG1mSnh1nDskU0rZ3G6rZTQozxbpO1zeVGJXO/4goDwFtNZ21geO8vSbG/aXsNAxGZpwnYWobziwjRrWJheGVBb9xn2+ojV1DI6jQcKMFfRGaR/N4Wa0UJGUnQ7BSRtLfOzT/GuDyVJTpVcSVB8mkT9maprQvgEVcaOjxLhzGEcHkuviRvrDRc83PxbRL6TG6v6OFmyXnWVBCR89JUBcB1w/LTasAW5ucSg78m4WOpyxORmYPyEZETK0Ps1Xm1bKfAyQD2WJ+yalA+OqiwBfk65yx5oHmXdpDa9fX7vpX+qcC8qYyW7RSZQfITU2Rjv+8DeNUWYos73gjdSx9FBHBt2/dI3pzuEvu56SqK1OZqb9/mXkOnKAB+MEPud6MC6UaenU3tcALJ51K/MUzEKwKdetgWO1I3SdEtZfnHe+8vdaMIdrtC3S57piozrGXeZzQPuFGFdMvwj9MYR6Na5beZAN63396r/jaSkG75cmDyNUSlVd5b5EqtBEjebudAz8stJG+zKUwkeYObTqDVYgB+sRGQfn7ITTeIyAwAb1TmWf84M9MK0r0+2G5/AMh3qen+w/gLuVTRZtyA5SMAAAAASUVORK5CYII="; width="30px"; height="30px">
+                         <h5>Xem giá tại</h5>
+                         <p>Hồ Chí Minh</p>
+                  </div>
+                  <div id="SearchBox">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACRUlEQVR4nO2Yz0tUURTHPxq5K0ylzGW2al/2R1QmKM4ibNFfUblqq/g/BGLTslz3C1qO2iIoKxAEpXa1HDWUI0cYDufhm5lz3/jkfeAy8Gbme89599xzv+9BRUVFRZkZBuaA10AD2AGa+tnQ6/L9EGeMm0Ad2AcOcwz53StgvNeBDwBLwF7OwO2Q1VkELvaqXN53GLgdn4GrRQY/AvzMCGYNeArcBq7r3ZXPO8AzYD3jfz9Ut5Cy+eQE8B24n1PjAbDpaHwoopyWnInfAJfa1JHfrzpaCyTuNntO8P0d6vU7STSBGySi7pRNu3feclnrv1V3hURdx/b5e0Hak845MUwwc063icR2p0fB+sc2oHUCaZWRPDf6Uq6hNMwE0ucjmTD634L12TUTXAvWHzP6/4L1j9tb6wRyoEUienYjh7JjJhB7kHIFfqfeA+JtUu6Br6m7kBizSOaN/nKZzoE+4IvRf0IwQ85JLK4yginHD41SgBfaVC/TDYPAL6P7kkSMO+30bRdu9IK6WXv3b5GQRcfDr3awEoOavNV6QWLkieljxiPhw5wbdsopm5MhzSI5I46HPxkbaswm9HAa0EPvrl633caOA6BWRBLi19+dEkyn4yCFnc4qpwVnY+cdTa35xxr0ofFChawE+gy70sabuaa2ytZuI8Hu9zIJ4YoufV39/F/gP/BHvc2ynrBZh1TtLCTRLTNOEoXtiShmzkMS0+chiVrGnpDXMKVh1klim5Ixa5KQFwylYxLY0rsf9RxSUVFRQSxHEZtxCQWGNWwAAAAASUVORK5CYII="; width="20px"; height="20px">
+                    <span>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABKElEQVR4nO2YzU7CQBRGz+PogldAZYE/rJSCO3CJoLj0kX0A5SeAlDShhpAZ2tA6nU6+k3TXuZmT2+nce0EIIYQQQvhIA3guMV4LuMExl8AXsAGGJcRrAt/AzKVMKhHvn9+CMlfAz0G8GXCNA/r7TMQlyLSB+VGsLfCGIxKZtWEDoxIkPnBMzyLzmmPtLbAwrJ1SERGwMmxofGLNnW8S58h4K5HStchM/t6Ae4vEO57RAZaWP1BtJFIeLZnJypaXPBgyU9k98V8ytZIIRqST49Py9pAHddifTmy4Nr/fbo7b3ftbPQqhRInOqIBtla/z8j2rjB/l7EW8kOkbJJIu8aVgYxUDnzgimFb34mj4UHSS0qxq+HAok0gMqOk4KKgBnRBCCCGEIJMdXBTwCqWDRf4AAAAASUVORK5CYII="; width="20px"; height="20px">
+                    </span>
+                    <p>Bạn cần tìm gì?</p>
+                 </div>
+                 <div id="GoiMuaHang">
+                    
+                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACsElEQVR4nO2YW4hNURjH1zE4I3fjQS5F8uBSGhI15ZJETUKJPEmReVOUQlNTHjwYPJjIE4UHlwmliBRCLnkhGSWJaBQxJXfz09dZp77zWfs0LmfPOrV/b3v/v9b+r72+vb71becyMjIyqgqgD9AI7ATWAP1dtQBMAq5TyhWg1sUOsBj4QJg2FzMUUuWHMvwNeKCuu4FlLkaAccAnZVZWYaHXTqn7b4GxLjaAXcqkTGSG0oYDz5V+FahxMQHcUga3B/QG4LuKaXYxATxR5iYnxDSrGJlMg4sF4K4yNzEhpsanT5GbLhaAC8rYgjJxjWaXyrkYANqUsS0JMSOA+yrusYsFYK0ydj6g54F7KuYnsNTFAjDaFyrhi2ydRt9kzK9zsQHcUSabjHZYaRddjAAbdX7LiVRpW5X2GZjnYgMYDHQpo6uUNtDUCjlq1LvYAFqUyae6DwAmAK+U/kaO3i4mgKHAO2WyxejTjC5npDEuJoANplhNN/oc4KOKeQTUBcaZD7QC24BRaU4gZzqyDmBIoPH5qmJuA4O81hfYTyldUmvSbiv1B91ujw3Aal8TilwGZgKXSOZ0aLUqNYmV5uF7AjFNlOca8Mzcey0rmNYk9pqH/9YHADsCxrv98VvSUbbgg6rSF3VJswFp/F45bsy1BtJpsy9wwktgRWCsJf7ta6SRyld6Ev2Ac+bBcj3MxNUC4yW+zFh1wAkz1vqKTkCZ0809PrcX/eV47Wqc3f/fcfihOV+pbS6fBKb8wTh5X+WLpLe9egPLgU6zGrKdHgVm9+AlHDJnqpIakwq+OztCmA6/UnP1LkPh+zhjYoPdX5oTmSUdHMnI34sXPmV06glnY+qp64EDwHt6xrGK14B/2K3knLQPuBH4UfxQ9xlVAYX/rlOBkb3tJSMjIyMjw/UGvwB4sb4djcmPigAAAABJRU5ErkJggg=="; width="30px"; height="30px">
+                      <h5>Gọi mua hàng</h5>
+                     <p>1800.2097</p>
+              </div>
+                 <div id="CuaHang">
+                    
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAElElEQVR4nO1aW8hVRRQexaKLt7KiqIegsoKKjKKXQC2iC0UYXUSffBWKXsLKhD+th0J6q+gG9SBFUUkSRPkQYSR/9RtahAVhROAlsiw7M983umJx1tDu7z9773POjJ4/+mDD4Zy112XWzLrNce5//BsiMjfGuILkiyTHAezH39iv35F8Ica4XETmuFGD9/5iki8D+JOktHkAHCb5kvf+olHwwCkkNwKgKXfUPLEWwGI1UERO1Uc/63cAHiX5mdHqO/ryUyJy0nExQleS5C5T5giATZ1O54K273c6nQsBvJYMIvmpiJzjjiVCCItsz6sCu0MIVw3KC8DVJL+1BfkxhHCFO1aeSEYA+EBEThuWp4icDuDDZExxz9iZ2FUxYlZG3icA2FrZZuXOjB7stJ1yeGIqz5D8zmQ85krAog71YA9zJpoA4BoNAAD+EJGzswvQPGFbapMrDACvm1eezZ6xNYHpSrUJsSJyFskNJHfoyupDcoLkehE5s2VAOWpemZ3NECs7dIXGm2hJ3gXgUE1G/43knS34fK70McZ7sxlitZMqsbaFESljv6OZPGV2kksAbE4JlOSyOl4A1pnxz+c0ZNwUWFy3nZInADxYo+Aao/lVRM6okbnUDNmew4Yk/IAy9d4vrBG8IXmiBb93m0Ks936h8ds3jO6TBQdlWld6k/yyyWtTrPZELxoRmWP8vMsFAB0zpGe2BfC70TRGmYqShxqqCNHWYBjdJyu515TsmaDS+WhpyNwUwWpozjWan1wukPxGmYYQLquh2WHbZUkLftcb7Re9aEIIVxrNVy4XAGyxmH5PjXLrbQU3t+VHcqwXTYxxpfF7exjdJyv5hAl+vBeNZmxLdip8TS86AA8bzUERWVAj88kmY/uGesKEb62j04xtyU4sxC7VM6OPbqfkCaO5o4HXNjOklq4vWLLTdtZrNGlQYJkmu5oS5WCTciIy3yptjR7zshliCk6YMrc20WrG1mSnh1nDskU0rZ3G6rZTQozxbpO1zeVGJXO/4goDwFtNZ21geO8vSbG/aXsNAxGZpwnYWobziwjRrWJheGVBb9xn2+ojV1DI6jQcKMFfRGaR/N4Wa0UJGUnQ7BSRtLfOzT/GuDyVJTpVcSVB8mkT9maprQvgEVcaOjxLhzGEcHkuviRvrDRc83PxbRL6TG6v6OFmyXnWVBCR89JUBcB1w/LTasAW5ucSg78m4WOpyxORmYPyEZETK0Ps1Xm1bKfAyQD2WJ+yalA+OqiwBfk65yx5oHmXdpDa9fX7vpX+qcC8qYyW7RSZQfITU2Rjv+8DeNUWYos73gjdSx9FBHBt2/dI3pzuEvu56SqK1OZqb9/mXkOnKAB+MEPud6MC6UaenU3tcALJ51K/MUzEKwKdetgWO1I3SdEtZfnHe+8vdaMIdrtC3S57piozrGXeZzQPuFGFdMvwj9MYR6Na5beZAN63396r/jaSkG75cmDyNUSlVd5b5EqtBEjebudAz8stJG+zKUwkeYObTqDVYgB+sRGQfn7ITTeIyAwAb1TmWf84M9MK0r0+2G5/AMh3qen+w/gLuVTRZtyA5SMAAAAASUVORK5CYII="; width="30px"; height="30px">
+                     <h5>Cửa hàng gần bạn</h5>
+                     
+              </div>
+                 <div id="TraCuu">
+                    
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA3klEQVR4nO2T2w2CQBBFhzrE+OiB2KNag3ypBaj1+KfRJo4hGRJUcHZxEQncZD5Y5i4ncxmRQYN6LxpQtwBCqrsABBqrR0pnIGoTIFPiPSlXAKNnrW3LtgAWXjFIeIBIP/4cAz8C0L5VIzHgDpDkMUhLANFbLzVGXhegtJd/AwDmwB64a+2Ameullv8jADAFriVLcQEmFoCL3wJI9fEAjLSOepY6AJj+SoAXjQrvx/jL9IsBEH8JYPqlYpT5CLOxxVonPdtURRDKL3V/wlB+KaxRtjo3ra21hiH9g/qjBygchGq3LTkVAAAAAElFTkSuQmCC"; width="30px"; height="30px">
+                     <h5>Tra cứu đơn hàng</h5>
+                     
+              </div>
+                 <div id="GioHang">
+                    
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC00lEQVR4nO2aPWyNURjHH5V00YlFTWpSiY9FDaih0RC10MbAVJVQImqqjUEZqIlNB+ojalITi25qoCaVtJVU1MTSllQiP3nb/3XfiHvve869Nx7il7zJzT3P/zn/5977nns+XrP//B6gFjgE3APGgTldyeu7aqs1zwAdwBSlmQQOmjeA5UB/yuhL4BTQCKzQ1aj3XqXiriRa8wL5Ir4CncCyIrE1QJdiF4sxRz+nhC/A9gDdjlQxB6rrMtuNnbsnOiP0x6Sd+KMDAEsjUO6eqInQJz+zMeXoqI7LbEbuy8TJMnKcVo47lXUXZuKtTKwvI8cG5RivrLswE7MyUVdGjjrlmK2suzATi3jJ8+8XAszjh/nYIlbhj5UxhWwpNZrkskd9UgF5yI+Om2OS75f4SayBChbyVCFtMcm7JR4o0N6S+spbgjsIyAMMqL07poPLEp8v0J6sKXJMRNSQOQ9wQe2XYjoYlLirQPv7lIHpiBoy52Fp2p8wGNPBiMStBdr3ysQ0sCeihsx5gFZ5GYnp4F2586hKwdLqMmEqZnq9UO48qlKQn499C1ouAGsk/GROAD7LU32IaJtEY+YE4LU8NcWswx+ZE4BheWoPEZ2V6Lo5AbghTz0homsS9ZoTgHPy1B8ieijRYXMCcESehkJELyTaaU4AmuVpNET0UaK15gSgQZ5mQjbdvutys2tOqC9gnSr/YM4AZuStIUvwLgU/N2cAo/LWHDI6PDBnAEOZR9PUeH3VnEH++KI35B/0jDkD6Mk84wAeK9jd0RjQLm/DIbPMreYMoCnzrDw1719tzgDqM62TUiuxhZiDm2pD1pVram08aU4hf9RXeC8htVvxzJxCfndnd7Ggowq6ZU4Bbpc8fE12FRV00ZwC9BXbAf11j/W4OQU4IY83LcOu9z5zCtBW6pTA9ARPwkZzCrBJHt8UC0oeR/pbmCtUhMejtlL8PIr7Aewqbc8fg63fAAAAAElFTkSuQmCC"; width="30px"; height="30px"> 
+                     <h5>Giỏ hàng</h5>
+                     
+              </div>
+                 <div id="login">
+                    
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAGtklEQVR4nO2ba4hVVRTHz/gixTQsX2WW2ZegBK3ALPNDZaNiGmSmZoajRmCZTaZSIFg+xnRS+iRJfqm0IChMxcJKNMM08ZG9jdDKwgpS08lyfrG468his++95+xz7mUa/MOFyzl7r7X2a732OlF0ARdQNQBtgf7A7cAIYJz+Rugzedc2ai0A+gAPAWuBQ8DflEcT8DnwCjAZuDz6PwG4BJgB7ACayQ6hsR2YLrSjlgqgN7AcOFlmQEeAbcAm4E39bdJnR8v0FdrLgF5RSwHQCVisW9eFbPn3gHnAYKBzAnqdte087XvWQ/cM8BzQsTqjLAJgJPCDR8B9wEzgsigjhAbwGLDfw+d74O6sPFIDaA+s8JzxT4BRQE0FeNYAo4FdDk+RoQFolzfPUiuy0xHiV2BKJQZeZCKmAscdGURRXlpp5lcBXzqM3wa6VZRx8YXY4MjyBdC3koM/Ypj9C8yuxqqX2Q1zVJYYR3KfBAqzbVdeNP64qIUAGKuWIcY3QI88Fd5OQ1wY3ZFx1W4EJukOmq3/B2XZTcBdjikWndA+lN55qLa32/6+KADivAArgZ8oDnn3ItAzkMcY5zg0hNBx7bw1dbOjsBV/GjhFcojH91TIjlCdEKM52E8AOqqjEWNDWoGAi4B1ngEe0+eyuxr1vzxz8brQCJhwsUwxxFHrFDIBix073y1AEHfwe4DhQBtP+zayWsBezyTUBCht6ycsDDmvpw2BKakIFGjItrdoTBLri0enusKiPoD/NEdx907Tebnj3qZdgR7ACUNjRcAAVjk6IVUEqDtKdlw6hUghnrch7agA4e0K7gnJ8uhOsMehMdAqxJAF6Zqk0wzTaX/A6tc4pm54WsENrVpD58dAWQ4aGtOSdNphOswMEPom0/9nn8JLuY1/MfQGBdCYZfpvS5LDazbJjNTxPDDRMFyXtr+H3huG3gMB/UUf/aP9m0sqQwpJyBhbAgUWBybGCyE0Sijk+kAaHxgak0o1XGsazg1kVm9oLA+hUcIVfzKQxrOGxppSDQ+ZhoMDmU1oSUdAaQwxNA6WurRoMmelbAKzCB2J9GIcy0EJihcaY2AgnYuNbmvymmXgWsPoaAahXTNYmzEYOy9TxnBZLFKMfr4GQ02D7aGMlJaEtDH2hiQs1RGS7HKwN+nQ+9jQuq3cbG/MyMx1hVcG0HjJ9D8ZmiMw9DaX3JXAeNNgfRZmHnOI+vbtEq68HXxQHqKMMr2/GhNQo6EsznGoLREOj3S2veDVPBKvSSZgZF5HwEmIuJOAurfrNURuVOGsto/xWtqESJYjMDQvJejZCfUJLk0tTuSdcneU4K2+Bv3zMIMlBOipqy1RXTEcVc+vRwX4WzN4dcUcoYQ7YqB6jHFafII+q8gli+MInSman6BQmRHjlqiVQLa8GdeBpMHQ/KiVwAmGXk4aDr8ftRI44fDEUg2vMGflbB4FDg79DsDNYoc19TZXfzP0mbzrUAHlaxMivSqaEnMB3AAsAnYnrBKTNp8CzwPXRxkBPGFof5ikw/QsSVFzoTrVUaqhkKTmw4EBlZsUrUvSqasTyIxOyfRB4HCRwcgW/Ap4C1gNLNXfan32dYnSuu9Knl+/LPea/n8CXZJ2XGY67kqyC6SgEXjXI/hJ9edHJ8nL6wLco26wz3vckOSWR2OLz0y/JYkGbxSHvRqbGpW/m//DEfS4Krhgh0pL5uZ56oF+L1ej4Nxv/JXau6RQh2cH47UIWhxla/nOaejbOWdPbpXStspycpH23YHfTNsFodfjhw2Rje5RAB51zqz48sMyjLWcTMOcalLh/YhH8b3j6I6wiJLCdbUd4BzzbpSxr6jGvzKHcSYpybV3hlIRMsa8n+/sxjuzMmxwCIrDMsCp+Nid6OIxJ4g2dwomT6m/Md45JovyYNZeC45iNGkVVgwJb/vkMrL0RRBWjsNOkdRHuVWPUjBNvlpdYTggFyZhcl3nWCt7HPMt3gT6OoWSgi0toFBSlDNOTVBldiSFSTjtcUxyDZoSytJdvzOwOF3x40jhCt09DuIn1FWpWLqNOjniDFnsq4YVsrn7Bo/fvlvLUipVLj/WU0V2TivaqlMu7/ETfIHPAeDxPJKb6pbPKhJZfpvZzmeFeowLi2hjcZS2As/oFXWXhDZ+iKaxtjrOlvXtF+R1Z5ALdKWWOqG0Dz9p0mWz+Whqsz6zqWsfhPYSUYBRSwUFn6FOvwLL47O5c+rU1FXT28zTb5dS+DWqF3xflrlo0rZrtOCq5Xwil5MJu0bu5/WSNP50tlZz9/2yVJRcwAVEqfEf2gszXqeIKSAAAAAASUVORK5CYII="; width="20px"; height="20px">
+                     <h5>Đăng Nhập</h5>
+                     
+              </div>
+              
+            </div>
+        </div>
+
+    </div>
+    <div class="body">
+        <div class="inner">
+            <div class="block">
+                <div   class="dt">
+                    <span class="dt">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqklEQVR4nO3ZQQrCQBBE0e8JDdJDFvHsLgwKQW8QQQmM4MLsq5t6ILhM8SeQKJhJacATuAEDSR2AB/DunxUYSWr5GZJ6zKlffIkx8WfMCziTUHiMqHAZUeEyosJlRLmMKpdR5TKqSpUZd17OBoqMmSky5EoyJY5W27nZJxLxCBUuocIlVLiECpdQ4RIqmh8ARbQKJY5V/gydK4zY3CuM+B6t7UeCS/9uVtUHEhTs/ZXHkMQAAAAASUVORK5CYII="; width="15px"; height="15px">
+                    </span>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqklEQVR4nO2XXQrCMBCEv6feyXoBPZhWr6V4kdr0GpHAFkRo3JL1RWZgHwLZnSE/kywI39EBV2AGsjMSMFhuMy4biD/jHCEgWbGdjZ8VwtHm9G8r0YxsseC4IqKQHyp5YQK8kICsLUCHEF1DZETZ7ZsVyIqzHiP0HKMPCWuG8gDuwf6xqVAhv/1aQLJC5avtxd5ypggBQ0NjcooQ0JmIZSU8MRl5SGvGX+MFk1Oo8Dc0FOoAAAAASUVORK5CYII="; width="24px"; height="24px">
+                    <p>Điện thoai,Tablet</p>
+                    <div  id="fixed" class="board-fixed">
+                        
+                        <div id="bodyOfdt" class="hover"> 
+                            <div class="THDT">
+                                <h4>Thương hiệu điện thoại</h4>
+                                <p>iPhone</p>
+                                <p>Samsung</p>
+                                <p>Xiaomi</p>
+                                <p>OPPO</p>
+                                <p>realme</p>
+                                <p>vivo</p>
+                                <p>Nokia</p>
+                                <p>ASUS</p>
+                                <p>Nubia, ZTE</p>
+                                <p>TECNO</p>
+                                <p>Infinix</p>
+                                <p>OnePlus</p>
+                                <p>Itel</p>
+                                <p>TCL</p>
+                                <p>Sony</p>
+                                <p>Điện thoại phổ thông</p>
+                            </div>
+                            <div class="MGDT">
+                                <h4>Mức giá điện thoại</h4>
+                                <p>Dưới 2 triệu</p>
+                                <p>Từ 2 - 4 triệu</p>
+                                <p>Từ 4 - 7 triệu</p>
+                                <p>Từ 7 - 13 triệu</p>
+                                <p>Từ 13 - 20 triệu</p>
+                                <p>Trên 20 triệu</p>
+                            </div>
+                            <div class="DTH">
+                                <h4>Điện thoại hot ⚡</h4>
+                                <p>iPhone 15 Pro Max</p>
+                                <p>iPhone 15</p>
+                                <p>OPPO Find N3</p>
+                                <p>Galaxy Z Flip5</p>
+                                <p>Galaxy S23 Ultra</p>
+                                <p>Xiaomi Redmi 13C</p>
+                                <p>Samsung Galaxy M34</p>
+                                <p>Samsung Galaxy A15 | A25 5G</p>
+                                <p>Infinix Note 30 5G</p>
+                                <p>ZTE Blade V50 Design</p>
+                                <p>ZTE Blade A52</p>
+                            </div>
+                            <div class="THT">
+                                <h4>Thương hiệu Tablet</h4>
+                                <p>iPad</p>
+                                <p>Samsung</p>
+                                <p>Xiaomi</p>
+                                <p>Huawei</p>
+                                <p>Lenovo</p>
+                                <p>Nokia</p>
+                                <p>TCL</p>
+                                <p>Kindle</p>
+                                <p>Máy đọc sách</p>
+                                <p>Xem thêm tất cả Tablet</p>
+                            </div>
+                            <div class="TB">
+                                <h4>Tablet hot ⚡</h4>
+                                <p>iPad Air 5</p>
+                                <p>iPad mini 6</p>
+                                <p>Galaxy Tab S9 FE 5G</p>
+                                <p>Galaxy Tab A9</p>
+                                <p>iPad Air 10.9" 2022 M1</p>
+                                <p>Nokia T21</p>
+                                <p>Huawei MatePad SE 10.4</p>
+                                <p>TCL Tab 10L WIFI 3GB 32GB</p>
+                                <p>Xiaomi Pad SE</p>
+                            </div>
+                        </div>     
+                    </div>   
+                </div>    
+                <div onclick="myFunction()" class="Lap">
+                    <span class="2">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqklEQVR4nO3ZQQrCQBBE0e8JDdJDFvHsLgwKQW8QQQmM4MLsq5t6ILhM8SeQKJhJacATuAEDSR2AB/DunxUYSWr5GZJ6zKlffIkx8WfMCziTUHiMqHAZUeEyosJlRLmMKpdR5TKqSpUZd17OBoqMmSky5EoyJY5W27nZJxLxCBUuocIlVLiECpdQ4RIqmh8ARbQKJY5V/gydK4zY3CuM+B6t7UeCS/9uVtUHEhTs/ZXHkMQAAAAASUVORK5CYII="; width="15px"; height="15px">
+                    </span>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAANElEQVR4nGNgGAWDCfynMh44CygF/0ctIARGg4ggGA0igmDgi4r/1LbgP40xA80tGAUDCwCTxqdZZcjOywAAAABJRU5ErkJggg=="; width="24px"; height="24px">
+                    <p>Laptop</p>
+                    
+                    <div  id="try" class="board-Lap">
+                        
+                        <div id="bodyOfLap" class="LapOfprops"> 
+                            <div class="CTH">
+                                <h4>Chọn theo hãng</h4>
+                                <p>Mac</p>
+                                <p>ASUS</p>
+                                <p>Lenovo</p>
+                                <p>Dell</p>
+                                <p>HP</p>
+                                <p>Acer</p>
+                                <p>LG</p>
+                                <p>Huawei</p>
+                                <p>MSI</p>
+                                <p>Gigabyte</p>
+                                <p>Vaio</p>
+                                <p>Microsoft Surface</p>
+                            </div>
+                            <div class="TG">
+                                <h4>Tầm giá</h4>
+                                <p>Dưới 10 triệu</p>
+                                <p>Từ 10 - 15 triệu</p>
+                                <p>Từ 15 - 20 triệu</p>
+                                <p>Từ 20 - 25 triệu</p>
+                                <p>Từ 13 - 20 triệu</p>
+                                <p>Từ 25 - 30 triệu</p>
+                            </div>
+                            <div class="CTNC">
+                                <h4>Chọn theo nhu cầu</h4>
+                                <p>Văn phòng</p>
+                                <p>Gaming</p>
+                                <p>Mỏng nhẹ</p>
+                                <p>Đồ họa - kỹ thuật</p>
+                                <p>Sinh viên</p>
+                                <p>Cảm ứng</p>
+                            </div>
+                            <div class="CTDC">
+                                <h4>Chọn theo dòng chip</h4>
+                                <p>Laptop Core i5</p>
+                                <p>Laptop Core i3</p>
+                                <p>Laptop Core i7</p>
+                                <p>Laptop Core i9</p>
+                            </div>
+                            <div class="KTMH">
+                                <h4>Chọn theo kích thước màn hình</h4>
+                                <p>Laptop 12 inch</p>
+                                <p>Laptop 13 inch</p>
+                                <p>Laptop 14 inch</p>
+                                <p>Laptop 15.6 inch</p>
+                                <p>Laptop 16 inch</p>
+                            </div>
+                        </div>                
+                    </div>
+                </div>
+                <div onclick="thirstFunction()"  class="At">
+                    <span class="3">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqklEQVR4nO3ZQQrCQBBE0e8JDdJDFvHsLgwKQW8QQQmM4MLsq5t6ILhM8SeQKJhJacATuAEDSR2AB/DunxUYSWr5GZJ6zKlffIkx8WfMCziTUHiMqHAZUeEyosJlRLmMKpdR5TKqSpUZd17OBoqMmSky5EoyJY5W27nZJxLxCBUuocIlVLiECpdQ4RIqmh8ARbQKJY5V/gydK4zY3CuM+B6t7UeCS/9uVtUHEhTs/ZXHkMQAAAAASUVORK5CYII="; width="15px"; height="15px">
+                    </span>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABhElEQVR4nO3VvWsVQRQF8F8MCrbaik1E0DQKKSKKPkHQSgSLgKBFIJWNnWCnpYio2AmKCPoX+FX4VAiKYBMCBlKnCIjaqBibyMjZMFl84b1UFu/AcmfO/Tize2dmGWJAnMUbfMV3vMVUj9gRnMdsYr/gFU73Cr6HVSzgFm7iU7j7iWkwiifxzeMG7mAxXBmvw8U4rrYKbcX1+C5V/JVw1yLWYEsVP10LdPEB2zATW79dF8spVnzf8LS1yO3JLYuaw7Pa+Q4vcSTqxdY4F34cExmfacWcCD+R3nXbAi/QSVCxNY6HP4aTGR9qxZwKP5mNsk7gPZ5jDEuxNTqVcF2oxr7k7sLrPGt4jM/Y3UoaRKDBWHpUdt4a9oRcyvfesQmBnbiQzfDPxY6n+6t5flSfaiOB/fhZ5X3E3h5v93dLHsXtVrM7Gwg083LYDusTnU0ITPZbfCjwf/TgYJIe4XJsmR/IFVHGD+Jrru1ykvtG839YSfJK5iO5kh/id3y/cHeQ4kOo8QfJ64xJHXwAzwAAAABJRU5ErkJggg=="; width="24px"; height="24px">
+                    <p>Âm thanh</p> 
+                    <div  id="3rd" class="board3">
+            
+                        <div id="bodyOfLap" class="LapOfprops"> 
+                            <div class="CTH">
+                                <h4>Chọn theo hãng</h4>
+                                <p>Mac</p>
+                                <p>ASUS</p>
+                                <p>Lenovo</p>
+                            </div>
+                        </div>                
+                    </div>           
+                </div>     
+                <div  onclick="fourthFunction()" class="Đho">
+                    <span class="4">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqklEQVR4nO3ZQQrCQBBE0e8JDdJDFvHsLgwKQW8QQQmM4MLsq5t6ILhM8SeQKJhJacATuAEDSR2AB/DunxUYSWr5GZJ6zKlffIkx8WfMCziTUHiMqHAZUeEyosJlRLmMKpdR5TKqSpUZd17OBoqMmSky5EoyJY5W27nZJxLxCBUuocIlVLiECpdQ4RIqmh8ARbQKJY5V/gydK4zY3CuM+B6t7UeCS/9uVtUHEhTs/ZXHkMQAAAAASUVORK5CYII="; width="15px"; height="15px">
+                    </span>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABn0lEQVR4nO2XO0sDQRSFP0XB+APSRggYTRl7QbD00SjaCYLRGG38PxbBB/k3itFC4hMRwVpNupWBszAscbMzuyEiHrjN3nvunN07M/cu/CMZXoHA0d7ICCWPxUObzkJAVcmaDpymODtZCDhTspoDZ1+c0ywEvChZGRgHNiXqHviU3enZBjCm2EDcVCgq0TuwCjwnqPsTsCJOoBze2FaSrrXAhT6x2Zw52YyeXVpxIcfk8EbDStgBdoHRmHjj21NsyDM5vPGoJF/AvANvwRJhSuKFgvUW5s17IfT3Qt3yT/kI2BK5BYx4CDDluJbf5HLGuchHMTFxAhDX+I9dFg4iVkkhYE7+2zQCJhLE5n/w56xNPBABLWuf5AcloBITm+8jwqsELpswKsLchqk3ocsxtEXUehzDmzTHsGCVwaUVhzhMexHZV3FH12tSLFrNyPsqjjajrmrcrxnVI92zkXU7vgIOgFlgUlbWJ29l3Y6L1kCybJUkzh6ApawGkuhIZsatdeAEaAMfsraerWU9kv2KobQ67LG8NOwfk6H/mvGn8Q21pPIsqjhPmQAAAABJRU5ErkJggg=="; width="24px"; height="24px">
+                    <p>Đồng hồ,Camera</p>
+                    <div  id="fourth" class="board4">
+            
+                        <div id="bodyOfLap" class="LapOfprops"> 
+                            <div class="CTH">
+                                <h4>Chọn theo hãng</h4>
+                                <p>Mac</p>
+                                <p>ASUS</p>
+                                <p>Lenovo</p>
+                            </div>
+                        </div>                
+                    </div>
+                </div>    
+                <div onclick="fifthFunction()" class="Giadung">
+                    <span class="5">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqklEQVR4nO3ZQQrCQBBE0e8JDdJDFvHsLgwKQW8QQQmM4MLsq5t6ILhM8SeQKJhJacATuAEDSR2AB/DunxUYSWr5GZJ6zKlffIkx8WfMCziTUHiMqHAZUeEyosJlRLmMKpdR5TKqSpUZd17OBoqMmSky5EoyJY5W27nZJxLxCBUuocIlVLiECpdQ4RIqmh8ARbQKJY5V/gydK4zY3CuM+B6t7UeCS/9uVtUHEhTs/ZXHkMQAAAAASUVORK5CYII="; width="15px"; height="15px">
+                    </span>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADpElEQVR4nO2ZW4iNURTHf6PjbighGZfQuB1FPHhAri88kLwp5ZUnL6LxxBB54UEZkeQJuYUnt1zLpRlDokiIUe7X5DZztOv/1e70ne9yrt859q92zdnfWnuvvdbae6/vG3A4HA6Hw+FwOMrJJOAo8AF4DxwBJvIfkALWAz+BTFb7DWwHulOjpIE7WmwX0AIMBYYBe9Vnnt2WbM1G/Tmw0EduNvCk1rIhrYh6UTeRrg+Q76OFd0qnHZhKDUc9F1WdDemYUa+ZbEgVGPWqzoZ0kaJeddmQKlHUqyIb0iWOemKzIVXmqCcqG9IVinrFsyGVkKhXJBvSCYt62bIhlfColzQbRme9ue3JM+pDgGbgLvBdrQ3YDAzOoWPmaSgwhev1tmm/YZo1RWIk8FKKz4AFeRqxHPjq897vtS/AMh+955bj7wNb4hifxUJrPLOmEVGUWqRwroC9vtzaiyeBOUBftbnAKT3r9HGCn7N+Abu0z+Ni1nBe45jzK5QXEh5HfgxRdM0Y6wLk1kvmMzDI6s9Y868Crlh9rcDwPGwab2V0KO8kbLaCzQxgWgT9ZivyYZyW7Carz1uszSJrWz4EBgSMOV222oySrllbKCckfFaKw61PViZaYbRL36R9GPMkaw5GD+/geqDD0ssOY8cjPTM25uKr9cnNfG4bC5yR3rGo6fIxx140A4fhHXz9Iu7PjHQ89gGvrDnfWM4cZ40/32e8uoBD932cw7QROAw8lTGHYjjAL4XzkTfZd1DPfgBT1N+kvgsBDjB2HlDKf9Bn9zExbAocuFwO8Nih57esrDHF2R9gYAF2xqKSDuhpbQnvEPautSUF2BmLSjrAOxeMzBr93q3fqwuwMxZRB64vkQO2SWZD1u+mPO2MTV2EgY3Mcav2jso14GqIjDfuSv0+kMQM2CiZT7pFikWDboEuqwq8q7lm+chXxAGLVdd36u9i0Ru4qLnNVYaus4xqlR4+OnG3YMEOaFTUM8qCYtAfWArc07ivVdUZ9qtvZw7dsjugNaD68prZ5x43Isjb7TEwQbqm+vsLvNV/lhPhgEsRF5JtYFAz5e5NYC3QS3pTVNl1hWyzsjsgjA7pzlTLqLCJSje9Fn/T/EGv2Il0wDafCG+NUE9MVga0SceUvysizJc4B/SQEzoU+a05Tm8P+wNIIa2o1JXqfvXhchEWH1ZYJdoBiaTOOQCXARm3BXBnQKZKWtFvAcP1BCwsajO1hMPhcDgcDoeDAP4B/3s3LhDBNzsAAAAASUVORK5CYII="; width="24px"; height="24px">
+                    <p>Gia dụng,SamrtHome</p>
+                    <div  id="fifth" class="board5">
+            
+                        <div id="bodyOfLap" class="LapOfprops"> 
+                            <div class="CTH">
+                                <h4>Chọn theo hãng</h4>
+                                <p>Mac</p>
+                                <p>ASUS</p>
+                                <p>Lenovo</p>
+                            </div>
+                        </div>                
+                    </div>
+                </div>    
+                <div  onclick="pkFunction()" class="Pk">
+                    <span class="6">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqklEQVR4nO3ZQQrCQBBE0e8JDdJDFvHsLgwKQW8QQQmM4MLsq5t6ILhM8SeQKJhJacATuAEDSR2AB/DunxUYSWr5GZJ6zKlffIkx8WfMCziTUHiMqHAZUeEyosJlRLmMKpdR5TKqSpUZd17OBoqMmSky5EoyJY5W27nZJxLxCBUuocIlVLiECpdQ4RIqmh8ARbQKJY5V/gydK4zY3CuM+B6t7UeCS/9uVtUHEhTs/ZXHkMQAAAAASUVORK5CYII="; width="15px"; height="15px">
+                    </span>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAsElEQVR4nO2XQQrCMBBF36qHsjtXIl6rVs+oq2rq3guMDEyhlNCWkglY8mAgTAKPfEJI4I+ogDvQAwForefODZBJXXOIg8kOQG1j7bnzMVk9EmvPjRPwisQ8VGdrktPNSMfy5IjV1vnNFPGUEnUypJzqXIfrueLmeniIjyvEusYFWSg3pIjZe9RhRvr2FF+Ab0SqvTN7fWWGyCvTNeaBNhJ1QwYqk+vOdacqzfKFScIPv8Se95/v9uoAAAAASUVORK5CYII="; width="24px"; height="24px">
+                    <p>Phụ kiên</p>
+                    <div  id="pk" class="elementOfpk">
+            
+                        <div id="bodyOfLap" class="LapOfprops"> 
+                            <div class="CTH">
+                                <h4>Chọn theo hãng</h4>
+                                <p>Mac</p>
+                                <p>ASUS</p>
+                                <p>Lenovo</p>
+                            </div>
+                        </div>                
+                    </div>
+                </div>    
+                <div onclick="pcFunction()" class="pc">
+                    <span class="7">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqklEQVR4nO3ZQQrCQBBE0e8JDdJDFvHsLgwKQW8QQQmM4MLsq5t6ILhM8SeQKJhJacATuAEDSR2AB/DunxUYSWr5GZJ6zKlffIkx8WfMCziTUHiMqHAZUeEyosJlRLmMKpdR5TKqSpUZd17OBoqMmSky5EoyJY5W27nZJxLxCBUuocIlVLiECpdQ4RIqmh8ARbQKJY5V/gydK4zY3CuM+B6t7UeCS/9uVtUHEhTs/ZXHkMQAAAAASUVORK5CYII="; width="15px"; height="15px">
+                    </span>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABAklEQVR4nO2aQQrCMBREZ+mV9ASKVxMXesNUFPQQI8LPQvEvkp82tc6DLApNyDQvCaQBhBiNLYABAAtLsroZdiop9yMFG+kdhLkf+aGU2nqtYe6HguB9RCafE2ONyORz4tfVovMBFYQakRiUWg5SKwilloPUCkKp5SC1glBqOUitIJRaDlIrCKWWg9QKQqn1b2pxKQd0XMqRaS+oIIZGpDGUWjNYfvltOfZc3wO42B/f3YyDpLwce0EGZwPygqDinaYLBpceZGdhPndSr94KwBnAI6DJHcDJ2moWpLTesaH3h55Bbva8Rj0ba+PaM0gr31nbzlzvoqCU10SuCTP27aAinrLbsItuETpBAAAAAElFTkSuQmCC"; width="24px"; height="24px">
+                    <p>PC,Màn hình</p>
+                    <div  id="pc" class="elementOfpc">
+            
+                        <div id="bodyOfLap" class="LapOfprops"> 
+                            <div class="CTH">
+                                <h4>Chọn theo hãng</h4>
+                                <p>Mac</p>
+                                <p>ASUS</p>
+                                <p>Lenovo</p>
+                            </div>
+                        </div>                
+                    </div>
+                </div>    
+                <div onclick="TiviFunction()" class="Tivi">
+                    <span class="8">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqklEQVR4nO3ZQQrCQBBE0e8JDdJDFvHsLgwKQW8QQQmM4MLsq5t6ILhM8SeQKJhJacATuAEDSR2AB/DunxUYSWr5GZJ6zKlffIkx8WfMCziTUHiMqHAZUeEyosJlRLmMKpdR5TKqSpUZd17OBoqMmSky5EoyJY5W27nZJxLxCBUuocIlVLiECpdQ4RIqmh8ARbQKJY5V/gydK4zY3CuM+B6t7UeCS/9uVtUHEhTs/ZXHkMQAAAAASUVORK5CYII="; width="15px"; height="15px">
+                    </span>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD4ElEQVR4nO2baYiOURTHf8wwyFKasQzGKBONJWHIEpFtxj5ZywdRiFDKGvKBUpYo+WILGfEB5YM95hORqckHZacIyS770tV563R7l3lm3meZ2/uvU+9znts99/zfu5x773kggwzqgkJgFjAd6Ehw6ATMAGYCnQkBTYFDwB/gr8gvYA/Q2Ee7OcBe4Leya37vB5oQIE6oBtiyz0e7B5PYrSAg9FdGH0hXNMPgiehMr+jug91i1eMeS/efBtxX7elLAFilDA5T+lKlX+yD3SWq/nFKP1zpVxIA1iuDPZR+gNIv9cHuMlV/idL3VHrTNt9RqgyeB/JlVr6q9IN9sDtE1X9VbBrbF5R+LAEgC7idZDL6BOT5YDdP6k5k9xbQkIBQAFQnaYyZmLqm0V5Xa7KzpVp6RKBoJDPxbmAbMAo4phr1GhiYBjsDpa5YvcbGaGC72DZtyCYiaABsUo39KlFibTEJ+KLq2x1kN68L5gE/VYS4OKQ6QsUY4GMt/j27F30GJlJPUQK8VM6cTBGzm33EUVX+jU9LaqDoAtxVTl0BWsUp1xw4Z4XZRTiC1kClcu6OtWy1B6rU++s+xRKhIgc4rpx8DvSRcPqp0p+S7Xbo6CC7rQVplEXAI+XsO5HY8yMpk06bZhlu48XxXNnv68OO+i4/gC01WYVygXsRaLBfYqLHpKhQhQ9LyNmvHssgOSP4ID79kYOVuMhXZ21HcAvj1R+7OVGhqapQmdr6zgFWR0jKa0GAiS7fi2+nExWarwgYFEcXJdFHYjVF7MzykhcCNkTA2XgyPwwCJoQ8oc0Nm4DOhAvTpgwBZHoA9hDIkpC3SiK+b8C1OGcITg6BbFnWEk2WW10nYKPSvZM9zBngu9KXu0pANvBWnl9Y1/MlMhTMuxuuEtArxZVY7OzhtxzhO0dAf/W8Ik75A+p9MxcJaKXGepX8y3pb/0rePRSdcwRgnSDfBBYCy61TpzUuE9DGctaWSpWy4yQBBm1l+ftlXcntsg5XnSVAj/thkkdg7hhsOE9AKmQIwMEeUCB5CYlkpAwNJwkoUuFuMnnlaiDUu4aXNyavqKWLBMQ2PcmuxUy5bv9LOkqAF2QIINMDcO5AZKc4lEguqvxh53rAiBqsADFp6yIBLcSZhynkiOQFOEeAV9SZgLVpTl3xKlvDIGC9h3EWpMzzg4DZyoBJKECuofUHSlGQ75Jd5gUNVZbI2USFihN8gFQYgVQXLSaTxSsmK992JCt42SKhLAIO10WGAuusDy2SpvAXAM8i0M39EnNXkBLtJKnZpTzBn5Ii5+nDinxgSshLXzpksot5xxmQJvwD9dhNEIvS7TsAAAAASUVORK5CYII="; width="24px"; height="24px">
+                    <p>Tivi</p>
+                    <div  id="Tivi" class="elementOfTivi">
+            
+                        <div id="bodyOfLap" class="LapOfprops"> 
+                            <div class="CTH">
+                                <h4>Chọn theo hãng</h4>
+                                <p>Mac</p>
+                                <p>ASUS</p>
+                                <p>Lenovo</p>
+                            </div>
+                        </div>                
+                    </div>
+                </div> 
+                <div onclick="switchFunction()" class="switch">
+                        <span class="9">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqklEQVR4nO3ZQQrCQBBE0e8JDdJDFvHsLgwKQW8QQQmM4MLsq5t6ILhM8SeQKJhJacATuAEDSR2AB/DunxUYSWr5GZJ6zKlffIkx8WfMCziTUHiMqHAZUeEyosJlRLmMKpdR5TKqSpUZd17OBoqMmSky5EoyJY5W27nZJxLxCBUuocIlVLiECpdQ4RIqmh8ARbQKJY5V/gydK4zY3CuM+B6t7UeCS/9uVtUHEhTs/ZXHkMQAAAAASUVORK5CYII="; width="15px"; height="15px">
+                        </span>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD40lEQVR4nO2bS08UQRDHf8tDiGdZT0YS8eQrAh/CB9GrguJtiV7MAgGJj0xMNBoVREzUg6jxEcWbRBPjN/AFegRMDPi8QCI+ogfGtKlN2s6wLLPTM7PZ+Scdlpmeqpqa6urq6i5YGimgEWgDskCvpZYVHo3CM3KsBgaAj4AbcvsA9APpKF48BXQD8xG8uNm+AZ1hWkQtcM9DkC/AffkqZyy1fuHx1YP/HaDG9sunPF7+NbANqCA8KF7bgTEPJVi1hG6D4SBQRXRQvIcMmdRwsIK0jDf95eOCy5pc8+KcA8eAYfZ+v3yDWJI5xXXLPT9Qsoxr8p0nYKSMqU6Neb+YyuPRJ4qgu0OjMxO0L2g2vH0xDm/SkgIqjdlBBUuBoVUjrKahYqDM/LjHFHcMWFck7RFNzj1Y8v7niC8uaHJ2BUnY0Qir33GFNTmdRAEkFuAmQ4DEB7iJEySZBRzii7KfBvdps1VbSWg2YKTkxVuDXgw5JaIAa3ASBZBYgBvDIbAS2AzsBtqBjJFlysh1dX+T9C/ZIVApiRm1NB+VjRG/GyqjslxuFrqxVsB64TltaWPlsyR4N8ZNAfXAQ2Ahj/C/JY32FLgOXDGyTOr/Ybk/Kf0Xo7Ug/OrjoIAu4JeHkLPAbaBDxnRB5quhUp7rEDqzHjx+yiZsJAqoAC55fJnHkvVdETA/RW+n0DctbVBP/johKeCoIcRzYCvhQPF5YfA/EqYC0mJ+OT5qTFcTLhS/G5oMP4C6sBRwQOPxJsI9R6WEV5os7WEpoE/jofxAlDirydIXhQW8jcD8c6iWvc+cLPvDUkCdjLkcn+GIfMBNTYbvwKowZwF9GLjilQPd48uDJuClwb8nijjgokdw8gRosRQHtAh9k+eAnlRxQo4Es8aUmGtzwF3gILDFx0xRJc8dEjpzi0SCh+OwFlgru7351gJ/5LzBMxm7V421wDXgltx/J/3zrQVGhG+sVoNrZG3/vogVX772SZTVEPd8QIWEq2p4PJLlcT7rWOwrT8vzWaFX0GEPJwQFNIg5Ty3jrFCtrON3wb+UeEY8d6/8zch1dX+D9PclixOCAno0HieJFifMqdBJIkGSSNBNIkGSSNBNIkGSSNApx0iwy+ZB5FKIBPcGeFS2JCPBpgAPS5dkJJgyNiNVuUpZ5QSRgqXcxTELaetY5wS9SmZUrU7Z5ARz6DQ6DAVsCbHNCeaQktI0veO4bFwud6e2pHKCOmo8lOBKucoD8RWF1AEvVSQVq5yglyVkDZ/gp00UeELktMX6ZEX3lN+KtbSUqcxYVEAsIkGWgLIIRUxFjIpwIXXAQRRJ2YoE/8NfmTuMCnnjLdcAAAAASUVORK5CYII="; width="24px"; height="24px">
+                        <p>Thu cũ đổi mới</p>
+                        <div  id="switch" class="elementOfswitch">
+            
+                            <div id="bodyOfLap" class="LapOfprops"> 
+                                <div class="CTH">
+                                    <h4>Chọn theo hãng</h4>
+                                    <p>Mac</p>
+                                    <p>ASUS</p>
+                                    <p>Lenovo</p>
+                                </div>
+                            </div>                
+                        </div>
+                    </div>
+                    <div onclick="hangcuFunction()" class="hangcu">
+                        <span class="10">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqklEQVR4nO3ZQQrCQBBE0e8JDdJDFvHsLgwKQW8QQQmM4MLsq5t6ILhM8SeQKJhJacATuAEDSR2AB/DunxUYSWr5GZJ6zKlffIkx8WfMCziTUHiMqHAZUeEyosJlRLmMKpdR5TKqSpUZd17OBoqMmSky5EoyJY5W27nZJxLxCBUuocIlVLiECpdQ4RIqmh8ARbQKJY5V/gydK4zY3CuM+B6t7UeCS/9uVtUHEhTs/ZXHkMQAAAAASUVORK5CYII="; width="15px"; height="15px">
+                        </span>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB/ElEQVR4nO2by0oDQRBFzw/oOrrXxL2PhfFrNFkEg6AEXwQkK0HyM+rOxw9I/kBXojuNxKViS8MEmjAE59HzMPdC7Ya61TXdt4qeKUiGFaAJHOZklrtGDqgB94ApiN0B1awWvwF8FGDRkzYE1n0vfh54dUi/gEvgAjjP2CznVRDDOJ4XYM5nAk4dsjdglfxh3/q7E9exT7KBQ7RNcdBw4nrwSfTpEFUoDipOXCOfRMaxoiGT2IwSgHaA0RFAGmAoHiSCqAqgMoj6ANQIUXal/U8iuAx0Qq6yWiHPtkKe6wQ+fMQWC1FJnqbc4Ezz7dqjp9hiISrJtCusJM+mEVssKAGktwP6zlnvz+IOMBHMR2yxoASgHYCOANIAJIJEF01VAVQGUR+AGiHUCTJDrfBTChWg1PcBS0A3wV8g3cCHj9hiIROSmFAC0A5ARwBpABJByq60MSERRCKIRBCJIBJBPMKoCqAyaNQHoEbIpKAne8H4jbV2WfTJpESyNeHrB6gXJLZMSA5C7v72y5CAkUOykMBPPWQHbCbwt5jVyMzAIdpJ6KsdjLlZ203oq5nV0NTJxNic90HFPw5yumNzR74HJ18cMju0eA30cpgb7gXc3048z74HJwne+jDFT99pmY1pjYxQBW4LsOix3UT4pTb1RDSAsxxmhy2n5U608F/VWnpFQ4/pSAAAAABJRU5ErkJggg=="; width="24px"; height="24px"></thuhien>
+                        <p>Hàng cũ</p>
+                        <div  id="hangcu" class="elementOfhangcu">
+            
+                            <div id="bodyOfLap" class="LapOfprops"> 
+                                <div class="CTH">
+                                    <h4>Chọn theo hãng</h4>
+                                    <p>Mac</p>
+                                    <p>ASUS</p>
+                                    <p>Lenovo</p>
+                                </div>
+                            </div>                
+                        </div>
+                    </div>
+                    <div onclick="saleFunction()" class="sale">
+                        <span class="11">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqklEQVR4nO3ZQQrCQBBE0e8JDdJDFvHsLgwKQW8QQQmM4MLsq5t6ILhM8SeQKJhJacATuAEDSR2AB/DunxUYSWr5GZJ6zKlffIkx8WfMCziTUHiMqHAZUeEyosJlRLmMKpdR5TKqSpUZd17OBoqMmSky5EoyJY5W27nZJxLxCBUuocIlVLiECpdQ4RIqmh8ARbQKJY5V/gydK4zY3CuM+B6t7UeCS/9uVtUHEhTs/ZXHkMQAAAAASUVORK5CYII="; width="15px"; height="15px">
+                        </span>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE7ElEQVR4nO2baaxdUxTHf/d5+tpSglJ8QLSv1BRBEURUjFGkCaKmlAqpxDzVEFFDDEk1hiZqiJYiMcQHWoIPpEWkKfKIohqtIWr6wEOFekdWsk6yrZxz7t5nuudx/8k/J7ln73X2XmeftdewL3TRRRdddNFxbA6cBzwCPAPMB2YB2/M/wPnAd0CUwI3A88BE/qO4NWXiln8CtwCbeMiUNpOAXhqO080kPwFuAKYD1wCvAEOmzevA2AyZo7RNpP0bi22AH5yJyTIfmdBub+ANo4SPUmzDpsASp92vQIuG4mpnoKv1zaWhB5gN/G1WyzjT7kKjqEtpKEYAnzsDneHZb7ragrjf22bVnOrcm0ND0QKedAY6qFugL6aZlfCEuX8ccDQNxlyzTGXPD8XlRobvCuo4rkzY3m7MKetRR8bPwC40HGcmbGnCk3PKk8/mM0fOqzQYxxjj5XL/AnIPBP5yZIl9aBwOUEOX5uHtWVD+/Y6sdcBoGoQJGT5+zP6Cz9jKOFSyFTYC48xen8YyjNc5KusPYB8agDHASs8gRz6RMrCHhzInA/cCHwN3U6GX95rn5IUnZri/U4GHVJlrgLfUj9g3YDw7A9cDqxKevVNJc/7XoJ8KmLzwggQ5vSaosZTtdFGGB7klMFODKNdrdLnMM7QOwj2BkxfeliDnIs++K/Rzc3EtsCGl/S/AY8AUfVmlwo3uQvhygqw4nvehjQV+S8goLQXOqHKLPDvFy/Phjwkx+7cB/YeMTXjXufd0HTnFYzO8PF+ONzK/DOw/z+k72/n9haonP7mNl+dLWUEukix2FuWtx9jN+V3G1lfV5PuB70uYvPBZI3txYP81GQo8qorJb2sisaIcNJmdmYH93zPje9C5d3PZk99CHxiVTHF6Yuygbq1vX9naklzj0jPDIwK3qBAuNM96OKDv8abveLPLlIIe3Vaiiij799bGxvisgmUpqe/YDgx02tGJAniFeeasNu3XA7umjHdH4Nyy/IBJgd9kXq5OcFHnp7SV4sju1IR5NUw+KzoUo/ah+vgrtQDSl2Kgp+i1VHzh8ebm6rWoAgYKBCoDKmODltpOaVNx8oabeMxyZftLWgXyxkMhdcHfUyJACZhO0Da5tr6hNgN2UYYC1uZ0YU9q46P8pAmWI0NzAatqVoDwdvJD4oEX28j/CjjEV+CCDihAPruDCyjBHfM7uqrsMySr5IWJbexAFQqIS+B5kxhuXvI0dZYO1TrCei2nBVWlbFHT5WGOwxGVzMU5Dzmsc2TYJGorj0Hs8QhTy8gNJPHOwLHuZcZU2lmhlpai21V7quDFAeOc4/R7iQrQCxyusXaVAZLlHR5O0iiTUjuLGhA5PEgzsDcBj+sxlrIyR3GeLyvAuc9p+02VKTEX7gDTIP75fmqRr9MDDm8CX+dQwqAerBhriiEPmHZy8pSmKCALo7WoOU3D7gWaeFmbUdmJc/7ipL2fUAyxecZGKyALfRr2SsrsKs+A67m6ln4ZCtgMOEKvvrGJLO3lCc7ZB3oUp3ZEBRSw3ElthWKMfjpyVGY7OoiogALiSFOuwxZRAQVUaT9qQ9RVAN0VEHU/Abo2IKrZfjQGG51JhHhgI41bO2zxqTORJXpQyYdLnX7i0w9bXFJzwqNxaAF3tYnc0jikicrG/rmJAMg/vC7THJ4Ppa306Sj+Ae8ekqp0hBu3AAAAAElFTkSuQmCC"; width="24px"; height="24px"></thuhien>
+                        <p>Khuyến mãi</p>
+                        <div  id="sale" class="elementOfsale">
+            
+                            <div id="bodyOfLap" class="LapOfprops"> 
+                                <div class="CTH">
+                                    <h4>Chọn theo hãng</h4>
+                                    <p>Mac</p>
+                                    <p>ASUS</p>
+                                    <p>Lenovo</p>
+                                </div>
+                            </div>                
+                        </div>
+                    </div>
+                    <div onclick="newsFunction()" class="news">
+                        <span class="12">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqklEQVR4nO3ZQQrCQBBE0e8JDdJDFvHsLgwKQW8QQQmM4MLsq5t6ILhM8SeQKJhJacATuAEDSR2AB/DunxUYSWr5GZJ6zKlffIkx8WfMCziTUHiMqHAZUeEyosJlRLmMKpdR5TKqSpUZd17OBoqMmSky5EoyJY5W27nZJxLxCBUuocIlVLiECpdQ4RIqmh8ARbQKJY5V/gydK4zY3CuM+B6t7UeCS/9uVtUHEhTs/ZXHkMQAAAAASUVORK5CYII="; width="15px"; height="15px">
+                        </span>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqklEQVR4nO2YQQrDMAwE910l+XyTvGt7DyW2QcGymAEdfDBoWBaMJQAY5ZLk5HP0iHiRaTJ7QSNyo3QiH0nbwDmtyCZpHzinFXHCaTJ7QSNyo0wiR4Il3ZhvjwjAS/hPma6g53ZEsd1b9qfLUUssLxKBERGJqGxHXEUkAiMiElHZjriKSARGRCSish1xFZEIjIhIROk6cgZ9pE0XyYQRWT0RJ58m/MYDFOQHaml2OiIY5t0AAAAASUVORK5CYII="; width="24px"; height="24px"></thuhien>
+                        <p>Tin công nghệ</p>
+                        <div  id="news" class="elementOfnews">
+            
+                            <div id="bodyOfLap" class="LapOfprops"> 
+                                <div class="CTH">
+                                    <h4>Chọn theo hãng</h4>
+                                    <p>Mac</p>
+                                    <p>ASUS</p>
+                                    <p>Lenovo</p>
+                                </div>
+                            </div>                
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="banner__block">
+            <img class="ipad" src="C:\Users\Admin\Desktop\thuhien\imgWeb\body\banner\ipad-gen9-right-th1.webp" alt=""; width="250px"; height="130px">
+            <img class="rightSv" src="C:\Users\Admin\Desktop\thuhien\imgWeb\body\banner\right sv.webp" alt=""; width="250px"; height="130px">
+            <img class="samsung" src="C:\Users\Admin\Desktop\thuhien\imgWeb\body\banner\samsung-s23-th1-right.webp" alt=""; width="250px"; height="130px">
+        </div>
+    </div>
+    <div class="slideShow">
+        <div class="slider-wrapper">
+            <div onclick="slideShow()" class="image-list">
+                <img id="slide" src="C:\Users\Admin\Desktop\thuhien\imgWeb\body\slideshow\ip15.webp", width="650px" , height="300px" >
+                <img id="slide"src="C:\Users\Admin\Desktop\thuhien\imgWeb\body\slideshow\galaxy a15a25.webp" alt="galaxya15a25", width="650px" , height="300px" >
+                <img id="slide"src="C:\Users\Admin\Desktop\thuhien\imgWeb\body\slideshow\redmi note 13.webp" alt="redmiNote13", width="650px" , height="300px" >
+                <img id="slide"src="C:\Users\Admin\Desktop\thuhien\imgWeb\body\slideshow\rog strix scar.webp" alt="rog strix scar", width="650px" , height="300px" >
+                <img id="slide"src="C:\Users\Admin\Desktop\thuhien\imgWeb\body\slideshow\robot-roborock-q5-pro-01-2024.webp" alt="robotRoborock", width="650px" , height="300px" >
+           
+            </div>
+            <div class="slider-icon">
+                <span onclick="goPrev()" id="prev" >
+                    <img class="nenPrev" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABDElEQVR4nO3aSwrCMBSF4V8UHChaJ+pIO6loxS0osaJLCHf/G5FCRqLgIEk90gN3fj/aNK9CH70MgBKogR2wBRbAEJGUgL0pD9yAIzDlh3P6AHitK7BGGGChGmCOMMDC69WOGVmAhboAI2WAAQ9grAywgOjsScQAtHVWB7R1UAd4YKYMsDDhSQMMWKkDnDrAci4AUwGO6oBGHeBzbYpSAQwo1AEbdUClDqh7wBfpXyH+eBAXygCvPpE1OZpPCajVAVNlgMvVfCrAUhngcjYfG+DVj1X2uZuPCZA+WpQ+3L0rH6+fVS84fFcDNgbAdfGpjAFwuWfYGBfdTVhVTvjxlKHRKmwDpX416EPEPAGQtRIsp98HCgAAAABJRU5ErkJggg==", width="55px" , height="55px">
+                    <img class="iconPrev" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAwklEQVR4nO3YSwrCQBRE0XJ3koGKIhJwoNsW/IAzXYE/rjQIkRDHvtfUWUGK24N0S2b1AubACTgAY2UErIEnnb0qGFHsVMGIO9AoC2AFPHojyqhWWXhEFC4RhUtE4RJRuEQU+LcjCFwiCCopsfxxKVooC2AEXFKP+Bpy7Q25ARNlA7TAq5Yxm4Ex5YjNlA0eExQuExQuExQuE5TLROUyUblMVLWV2f64nDWqZMxRGQ2MOSurzxtAeZkpjxrTf3+PmTpv7xlhxnXRXrYAAAAASUVORK5CYII=" , width="20px" , height="20px">
+                    
+                </span>
+                <span onclick="goNext()" id="next" >
+                    <img class="nenNext" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABHUlEQVR4nO2aTQrCQAyFv1LBhaJ0pSt1o6CtV/BfPILk/hcRYYQiKtLW6bzaB7N/H2SSSTLQ6j8VAwkwBRbACpgRuPpABpyAK2AvTpAQY+DwxrA9nTUBaQgcvzRuIQFELqbfhUnQAB1gV8C4hQDQBS4lzFudAPe0eC5p3uoCiEqGjdUNkFZk3uoAGBbMNsEAHCs0b74BxhWbN98AB2WA/g/Mm0+ATB3grAwQV5w6zTdA8iPz5gtgqg6wUAdIWwDaEPrvS5yoA8TqhQw3XZMGyNQBeuoA8g1NI1pK+aa+EWMV3CRaGiACtsoA8sPdRozX8wuOjTLAQ0vVFVNegwLVek2AGgF7ZYD8AzB11Vtq0f3pq8EEmLtieG9VW6GmG1EoEkwsbG8JAAAAAElFTkSuQmCC", width="55px" , height="55px">
+                    <img class="iconNext" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAsUlEQVR4nO3ZwQqCYBRE4esTJlK4qGd3oRRIvUHBESvIhe3nXuZbRSuH8wtaEWY6gBPwAK5AGxkBDXDn5wn0kREwb4bkHQN034svMea4M+YFXCIbPEYULiMKlxGFy4hyGVUuo8plVFUr0/95OWujyJgpigwZI5MSR4vP72J7N/s5svAIFS6hwiVUuIQKl1CBHztE4BIiKFLiUOLPUGBKP2IF3NKP2BytERjWz+8vzWpaAFg7XsQMSUrmAAAAAElFTkSuQmCC", width="20px" , height="20px">
+                    
+                </span>    
+            </div>
+        </div>
+    </div>
+    <div id="nen" class="test">
+        <div  id="fix" class="dropdown">
+            <div  onclick="dtFunction()" class="dt">
+                <span class="dt">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqklEQVR4nO3ZQQrCQBBE0e8JDdJDFvHsLgwKQW8QQQmM4MLsq5t6ILhM8SeQKJhJacATuAEDSR2AB/DunxUYSWr5GZJ6zKlffIkx8WfMCziTUHiMqHAZUeEyosJlRLmMKpdR5TKqSpUZd17OBoqMmSky5EoyJY5W27nZJxLxCBUuocIlVLiECpdQ4RIqmh8ARbQKJY5V/gydK4zY3CuM+B6t7UeCS/9uVtUHEhTs/ZXHkMQAAAAASUVORK5CYII="; width="15px"; height="15px">
+                </span>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqklEQVR4nO2XXQrCMBCEv6feyXoBPZhWr6V4kdr0GpHAFkRo3JL1RWZgHwLZnSE/kywI39EBV2AGsjMSMFhuMy4biD/jHCEgWbGdjZ8VwtHm9G8r0YxsseC4IqKQHyp5YQK8kICsLUCHEF1DZETZ7ZsVyIqzHiP0HKMPCWuG8gDuwf6xqVAhv/1aQLJC5avtxd5ypggBQ0NjcooQ0JmIZSU8MRl5SGvGX+MFk1Oo8Dc0FOoAAAAASUVORK5CYII="; width="24px"; height="24px">
+                <p>Điện thoai,Tablet</p>
+                <div  id="dt" class="dropdown-fixed">
+                    
+                    <div id="bodyOfdt" class="hover"> 
+                        <div class="THDT">
+                            <h4>Thương hiệu điện thoại</h4>
+                            <p>iPhone</p>
+                            <p>Samsung</p>
+                            <p>Xiaomi</p>
+                            <p>OPPO</p>
+                            <p>realme</p>
+                            <p>vivo</p>
+                            <p>Nokia</p>
+                            <p>ASUS</p>
+                            <p>Nubia, ZTE</p>
+                            <p>TECNO</p>
+                            <p>Infinix</p>
+                            <p>OnePlus</p>
+                            <p>Itel</p>
+                            <p>TCL</p>
+                            <p>Sony</p>
+                            <p>Điện thoại phổ thông</p>
+                        </div>
+                        <div class="MGDT">
+                            <h4>Mức giá điện thoại</h4>
+                            <p>Dưới 2 triệu</p>
+                            <p>Từ 2 - 4 triệu</p>
+                            <p>Từ 4 - 7 triệu</p>
+                            <p>Từ 7 - 13 triệu</p>
+                            <p>Từ 13 - 20 triệu</p>
+                            <p>Trên 20 triệu</p>
+                        </div>
+                        <div class="DTH">
+                            <h4>Điện thoại hot ⚡</h4>
+                            <p>iPhone 15 Pro Max</p>
+                            <p>iPhone 15</p>
+                            <p>OPPO Find N3</p>
+                            <p>Galaxy Z Flip5</p>
+                            <p>Galaxy S23 Ultra</p>
+                            <p>Xiaomi Redmi 13C</p>
+                            <p>Samsung Galaxy M34</p>
+                            <p>Samsung Galaxy A15 | A25 5G</p>
+                            <p>Infinix Note 30 5G</p>
+                            <p>ZTE Blade V50 Design</p>
+                            <p>ZTE Blade A52</p>
+                        </div>
+                        <div class="THT">
+                            <h4>Thương hiệu Tablet</h4>
+                            <p>iPad</p>
+                            <p>Samsung</p>
+                            <p>Xiaomi</p>
+                            <p>Huawei</p>
+                            <p>Lenovo</p>
+                            <p>Nokia</p>
+                            <p>TCL</p>
+                            <p>Kindle</p>
+                            <p>Máy đọc sách</p>
+                            <p>Xem thêm tất cả Tablet</p>
+                        </div>
+                        <div class="TB">
+                            <h4>Tablet hot ⚡</h4>
+                            <p>iPad Air 5</p>
+                            <p>iPad mini 6</p>
+                            <p>Galaxy Tab S9 FE 5G</p>
+                            <p>Galaxy Tab A9</p>
+                            <p>iPad Air 10.9" 2022 M1</p>
+                            <p>Nokia T21</p>
+                            <p>Huawei MatePad SE 10.4</p>
+                            <p>TCL Tab 10L WIFI 3GB 32GB</p>
+                            <p>Xiaomi Pad SE</p>
+                        </div>
+                    </div>     
+                </div>   
+                
+            </div>
+            <div onclick="myFunction()" class="Lap">
+                <span class="2">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqklEQVR4nO3ZQQrCQBBE0e8JDdJDFvHsLgwKQW8QQQmM4MLsq5t6ILhM8SeQKJhJacATuAEDSR2AB/DunxUYSWr5GZJ6zKlffIkx8WfMCziTUHiMqHAZUeEyosJlRLmMKpdR5TKqSpUZd17OBoqMmSky5EoyJY5W27nZJxLxCBUuocIlVLiECpdQ4RIqmh8ARbQKJY5V/gydK4zY3CuM+B6t7UeCS/9uVtUHEhTs/ZXHkMQAAAAASUVORK5CYII="; width="15px"; height="15px">
+                </span>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAANElEQVR4nGNgGAWDCfynMh44CygF/0ctIARGg4ggGA0igmDgi4r/1LbgP40xA80tGAUDCwCTxqdZZcjOywAAAABJRU5ErkJggg=="; width="24px"; height="24px">
+                <p>Laptop</p>
+                <div  id="fixed" class="dropdown-Lap">
+                    
+                    <div id="bodyOfLap" class="LapOfprops"> 
+                        <div class="CTH">
+                            <h4>Chọn theo hãng</h4>
+                            <p>Mac</p>
+                            <p>ASUS</p>
+                            <p>Lenovo</p>
+                            <p>Dell</p>
+                            <p>HP</p>
+                            <p>Acer</p>
+                            <p>LG</p>
+                            <p>Huawei</p>
+                            <p>MSI</p>
+                            <p>Gigabyte</p>
+                            <p>Vaio</p>
+                            <p>Microsoft Surface</p>
+                        </div>
+                        <div class="TG">
+                            <h4>Tầm giá</h4>
+                            <p>Dưới 10 triệu</p>
+                            <p>Từ 10 - 15 triệu</p>
+                            <p>Từ 15 - 20 triệu</p>
+                            <p>Từ 20 - 25 triệu</p>
+                            <p>Từ 13 - 20 triệu</p>
+                            <p>Từ 25 - 30 triệu</p>
+                        </div>
+                        <div class="CTNC">
+                            <h4>Chọn theo nhu cầu</h4>
+                            <p>Văn phòng</p>
+                            <p>Gaming</p>
+                            <p>Mỏng nhẹ</p>
+                            <p>Đồ họa - kỹ thuật</p>
+                            <p>Sinh viên</p>
+                            <p>Cảm ứng</p>
+                        </div>
+                        <div class="CTDC">
+                            <h4>Chọn theo dòng chip</h4>
+                            <p>Laptop Core i5</p>
+                            <p>Laptop Core i3</p>
+                            <p>Laptop Core i7</p>
+                            <p>Laptop Core i9</p>
+                        </div>
+                        <div class="KTMH">
+                            <h4>Chọn theo kích thước màn hình</h4>
+                            <p>Laptop 12 inch</p>
+                            <p>Laptop 13 inch</p>
+                            <p>Laptop 14 inch</p>
+                            <p>Laptop 15.6 inch</p>
+                            <p>Laptop 16 inch</p>
+                        </div>
+                    </div>                
+                </div>
+            </div>    
+            <div onclick="thirstFunction()"  class="At">
+                <span class="3">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqklEQVR4nO3ZQQrCQBBE0e8JDdJDFvHsLgwKQW8QQQmM4MLsq5t6ILhM8SeQKJhJacATuAEDSR2AB/DunxUYSWr5GZJ6zKlffIkx8WfMCziTUHiMqHAZUeEyosJlRLmMKpdR5TKqSpUZd17OBoqMmSky5EoyJY5W27nZJxLxCBUuocIlVLiECpdQ4RIqmh8ARbQKJY5V/gydK4zY3CuM+B6t7UeCS/9uVtUHEhTs/ZXHkMQAAAAASUVORK5CYII="; width="15px"; height="15px">
+                </span>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABhElEQVR4nO3VvWsVQRQF8F8MCrbaik1E0DQKKSKKPkHQSgSLgKBFIJWNnWCnpYio2AmKCPoX+FX4VAiKYBMCBlKnCIjaqBibyMjZMFl84b1UFu/AcmfO/Tize2dmGWJAnMUbfMV3vMVUj9gRnMdsYr/gFU73Cr6HVSzgFm7iU7j7iWkwiifxzeMG7mAxXBmvw8U4rrYKbcX1+C5V/JVw1yLWYEsVP10LdPEB2zATW79dF8spVnzf8LS1yO3JLYuaw7Pa+Q4vcSTqxdY4F34cExmfacWcCD+R3nXbAi/QSVCxNY6HP4aTGR9qxZwKP5mNsk7gPZ5jDEuxNTqVcF2oxr7k7sLrPGt4jM/Y3UoaRKDBWHpUdt4a9oRcyvfesQmBnbiQzfDPxY6n+6t5flSfaiOB/fhZ5X3E3h5v93dLHsXtVrM7Gwg083LYDusTnU0ITPZbfCjwf/TgYJIe4XJsmR/IFVHGD+Jrru1ykvtG839YSfJK5iO5kh/id3y/cHeQ4kOo8QfJ64xJHXwAzwAAAABJRU5ErkJggg=="; width="24px"; height="24px">
+                <p>Âm thanh</p> 
+                <div  id="3rd" class="dropdown3">
+
+                    <div id="bodyOfAt" class="AtOfprops"> 
+                        <div class="CLTN">
+                            <h4>Chọn loại tai nghe</h4>
+                            <p>Tai nghe Bluetooth</p>
+                            <p>Tai nghe chụp tai</p>
+                            <p>Tai nghe có dây</p>
+                            <p>Tai nghe thể thao</p>
+                            <p>Tai nghe Gaming</p>
+                            <p>Xem tất cả tai nghe</p>
+                        </div>
+                        <div class="HTN">
+                            <h4>Hãng tai nghe</h4>
+                            <p>Apple</p>
+                            <p>JBL</p>
+                            <p>Marshall</p>
+                            <p>Sony</p>
+                            <p>Soundpeats</p>
+                            <p>Xiaomi</p>
+                            <p>Samsung</p>
+                            <p>Sennheiser</p>
+                            <p>ASUS</p>
+                            <p>Soul</p>
+                            <p>Havit</p>
+                            <p>Edifier</p>
+                        </div>
+                        <div class="CLL">
+                            <h4>Chọn loại loa</h4>
+                            <p>Loa Bluetooth</p>
+                            <p>Loa mini</p>
+                            <p>Loa Karaoke</p>
+                            <p>Loa Soundbar</p>
+                            <p>Xem tất cả loa</p>
+                        </div>
+                        <div class="HL">
+                            <h4>Hãng loa</h4>
+                            <p>JBL</p>
+                            <p>LG</p>
+                            <p>Sony</p>
+                            <p>Marshall</p>
+                            <p>Harman Kardon</p>
+                            <p>Tronsmart</p>
+                            <p>Samsung</p>
+                            <p>Edifier</p>
+                            <p>Bose</p>
+                        </div>
+                        <div class="SPNB">
+                            <h4>Sản phẩm nổi bật</h4>
+                            <p>AirPods Pro 2</p>
+                            <p>AirPods Pro 2021</p>
+                            <p>JBL Tour Pro 2</p>
+                            <p>Soul S-LIVE 30</p>
+                            <p>JBL Authentics 200</p>
+                            <p>JBL Authentics 500</p>
+                            <p>Loa Sony SRS-XE200</p>
+                            <p>Edifier QD35</p>
+                           
+                        </div>
+                        <div class="mic">
+                            <h4>Mic</h4>
+                            <p>Mic Karaoke</p>
+                            <p>Mic thu âm</p>
+                        </div>
+                        
+                    </div>                
+                </div>  
+            </div>
+            <div onclick="fourthFunction()" class="Đho">
+                <span class="4">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqklEQVR4nO3ZQQrCQBBE0e8JDdJDFvHsLgwKQW8QQQmM4MLsq5t6ILhM8SeQKJhJacATuAEDSR2AB/DunxUYSWr5GZJ6zKlffIkx8WfMCziTUHiMqHAZUeEyosJlRLmMKpdR5TKqSpUZd17OBoqMmSky5EoyJY5W27nZJxLxCBUuocIlVLiECpdQ4RIqmh8ARbQKJY5V/gydK4zY3CuM+B6t7UeCS/9uVtUHEhTs/ZXHkMQAAAAASUVORK5CYII="; width="15px"; height="15px">
+                </span>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABn0lEQVR4nO2XO0sDQRSFP0XB+APSRggYTRl7QbD00SjaCYLRGG38PxbBB/k3itFC4hMRwVpNupWBszAscbMzuyEiHrjN3nvunN07M/cu/CMZXoHA0d7ICCWPxUObzkJAVcmaDpymODtZCDhTspoDZ1+c0ywEvChZGRgHNiXqHviU3enZBjCm2EDcVCgq0TuwCjwnqPsTsCJOoBze2FaSrrXAhT6x2Zw52YyeXVpxIcfk8EbDStgBdoHRmHjj21NsyDM5vPGoJF/AvANvwRJhSuKFgvUW5s17IfT3Qt3yT/kI2BK5BYx4CDDluJbf5HLGuchHMTFxAhDX+I9dFg4iVkkhYE7+2zQCJhLE5n/w56xNPBABLWuf5AcloBITm+8jwqsELpswKsLchqk3ocsxtEXUehzDmzTHsGCVwaUVhzhMexHZV3FH12tSLFrNyPsqjjajrmrcrxnVI92zkXU7vgIOgFlgUlbWJ29l3Y6L1kCybJUkzh6ApawGkuhIZsatdeAEaAMfsraerWU9kv2KobQ67LG8NOwfk6H/mvGn8Q21pPIsqjhPmQAAAABJRU5ErkJggg=="; width="24px"; height="24px">
+                <p>Đồng hồ,Camera</p>
+                <div  id="fourth" class="dropdown4">
+
+                    <div id="bodyOfĐho" class="ĐhoOfprops"> 
+                        <div class="LDH">
+                            <h4>Loại đồng hồ</h4>
+                            <p>Đồng hồ thông minh</p>
+                            <p>Vòng đeo tay thông minh</p>
+                            <p>Đồng hồ định vị trẻ em</p>
+                            <p>Dây đeo</p>
+                        </div>
+                        <div class="CTTH">
+                            <h4>Chọn theo thương hiệu</h4>
+                            <p>Apple Watch</p>
+                            <p>Samsung</p>
+                            <p>Xiaomi</p>
+                            <p>Huawei</p>
+                            <p>Coros</p>
+                            <p>Garmin</p>
+                            <p>Kieslect</p>
+                            <p>Amazfit</p>
+                            <p>Soundpeats</p>
+                        </div>
+                        <div class="Spnb">
+                            <h4>Sản phẩm nổi bật ⚡</h4>
+                            <p>Apple Watch Series 9</p>
+                            <p>Apple Watch Ultra 2 2023</p>
+                            <p>Apple Watch SE</p>
+                            <p>Amazfit Balance</p>
+                            <p>Amazfit Active</p>
+                            <p>Huawei Watch GT4</p>
+                            <p>Samsung Galaxy Watch6</p>
+                            <p>Xiaomi Mi Band 8</p>
+                            <p>Huawei Watch Fit Se</p>
+                            <p>Garmin Forerunner 965</p>
+                        </div>
+                        <div class="camera">
+                            <h4>Camera</h4>
+                            <p>Camera an ninh</p>
+                            <p>Camera hành trình</p>
+                            <p>Action Camera</p>
+                            <p>Gimbal</p>
+                            <p>Tripod</p>
+                            <p>Máy ảnh</p>
+                            <p>Flycam</p>
+                            <P>Xem tất cả camera</P>
+                        </div>
+                        <div class="CNB">
+                            <h4>Camera nổi bật</h4>
+                            <p>Camera an ninh Imou</p>
+                            <p>Camera an ninh Ezviz</p>
+                            <p>Camera an ninh Xiaomi</p>
+                            <p>Camera an ninh TP-Link</p>
+                            <p>Camera Gopro</p>
+                            <p>Camera DJI</p>
+                            <p>Camera Insta360</p>
+                            <p>Máy ảnh Fujifilm</p>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+            <div onclick="fifthFunction()" class="Giadung">
+                <span class="5">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqklEQVR4nO3ZQQrCQBBE0e8JDdJDFvHsLgwKQW8QQQmM4MLsq5t6ILhM8SeQKJhJacATuAEDSR2AB/DunxUYSWr5GZJ6zKlffIkx8WfMCziTUHiMqHAZUeEyosJlRLmMKpdR5TKqSpUZd17OBoqMmSky5EoyJY5W27nZJxLxCBUuocIlVLiECpdQ4RIqmh8ARbQKJY5V/gydK4zY3CuM+B6t7UeCS/9uVtUHEhTs/ZXHkMQAAAAASUVORK5CYII="; width="15px"; height="15px">
+                </span>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADpElEQVR4nO2ZW4iNURTHf6PjbighGZfQuB1FPHhAri88kLwp5ZUnL6LxxBB54UEZkeQJuYUnt1zLpRlDokiIUe7X5DZztOv/1e70ne9yrt859q92zdnfWnuvvdbae6/vG3A4HA6Hw+FwOMrJJOAo8AF4DxwBJvIfkALWAz+BTFb7DWwHulOjpIE7WmwX0AIMBYYBe9Vnnt2WbM1G/Tmw0EduNvCk1rIhrYh6UTeRrg+Q76OFd0qnHZhKDUc9F1WdDemYUa+ZbEgVGPWqzoZ0kaJeddmQKlHUqyIb0iWOemKzIVXmqCcqG9IVinrFsyGVkKhXJBvSCYt62bIhlfColzQbRme9ue3JM+pDgGbgLvBdrQ3YDAzOoWPmaSgwhev1tmm/YZo1RWIk8FKKz4AFeRqxHPjq897vtS/AMh+955bj7wNb4hifxUJrPLOmEVGUWqRwroC9vtzaiyeBOUBftbnAKT3r9HGCn7N+Abu0z+Ni1nBe45jzK5QXEh5HfgxRdM0Y6wLk1kvmMzDI6s9Y868Crlh9rcDwPGwab2V0KO8kbLaCzQxgWgT9ZivyYZyW7Carz1uszSJrWz4EBgSMOV222oySrllbKCckfFaKw61PViZaYbRL36R9GPMkaw5GD+/geqDD0ssOY8cjPTM25uKr9cnNfG4bC5yR3rGo6fIxx140A4fhHXz9Iu7PjHQ89gGvrDnfWM4cZ40/32e8uoBD932cw7QROAw8lTGHYjjAL4XzkTfZd1DPfgBT1N+kvgsBDjB2HlDKf9Bn9zExbAocuFwO8Nih57esrDHF2R9gYAF2xqKSDuhpbQnvEPautSUF2BmLSjrAOxeMzBr93q3fqwuwMxZRB64vkQO2SWZD1u+mPO2MTV2EgY3Mcav2jso14GqIjDfuSv0+kMQM2CiZT7pFikWDboEuqwq8q7lm+chXxAGLVdd36u9i0Ru4qLnNVYaus4xqlR4+OnG3YMEOaFTUM8qCYtAfWArc07ivVdUZ9qtvZw7dsjugNaD68prZ5x43Isjb7TEwQbqm+vsLvNV/lhPhgEsRF5JtYFAz5e5NYC3QS3pTVNl1hWyzsjsgjA7pzlTLqLCJSje9Fn/T/EGv2Il0wDafCG+NUE9MVga0SceUvysizJc4B/SQEzoU+a05Tm8P+wNIIa2o1JXqfvXhchEWH1ZYJdoBiaTOOQCXARm3BXBnQKZKWtFvAcP1BCwsajO1hMPhcDgcDoeDAP4B/3s3LhDBNzsAAAAASUVORK5CYII="; width="24px"; height="24px">
+                <p>Gia dụng,SamrtHome</p>
+                <div  id="fifth" class="dropdown5">
+
+                    <div id="bodyOfGiadung" class="GiadungOfprops"> 
+                        <div class="GDNB">
+                            <h4>Gia dụng nhà bếp </h4>
+                            <P>Nồi chiên không dầu</P>
+                            <P> Nồi cơm điện</P>
+                            <P>Lò vi sóng</P>
+                            <P>Bếp điện</P>
+                            <P>Máy ép trái cây</P>
+                            <P>Máy xay sinh tố</P>
+                            <P>Máy làm sữa hạt</P>
+                            <P>Ấm siêu tốc</P>
+                        </div>
+                        <div class="SK">
+                            <h4>Sức khỏe - Làm đẹp</h4>
+                            <P>Máy lọc không khí</P>
+                            <P>Bàn ghế công thái học</P>
+                            <P>Bàn ghế gaming</P>
+                            <P>Máy sấy tóc</P>
+                            <P>Máy massage</P>
+                            <P>Máy cạo râu</P>
+                            <P>Cân sức khoẻ</P>
+                            <P>Bàn chải điện</P>
+                            <P>Máy tăm nước</P>
+                        </div>
+                        <div class="TBGD">
+                            <h4>Thiết bị gia đình</h4>
+                            <P>Robot hút bụi</P>
+                            <P>Máy hút bụi cầm tay</P>
+                            <P>Máy lọc nước</P>
+                            <P>TV Box</P>
+                            <P>Máy chiếu</P>
+                            <P>Quạt</P>
+                            <P>Đèn thông minh</P>
+                        </div>
+                        <div class="NB">
+                            <h4>Sản phẩm nổi bật⚡</h4>
+                            <P>Nồi chiên không dầu Philips</P>
+                            <P>Máy hút bụi Deerma CM800</P>
+                            <P>Máy chiếu Beecube X2 Max Gen 3</P>
+                            <P>Máy Massage cổ Breo N5 Mini</P>
+                            <P> Máy chơi game Sony PlayStation 5</P>
+                            <P>Máy lọc không khí Xiaomi</P>
+                        </div>
+                        <div class="THGD">
+                            <h4>Thương hiệu gia dụng</h4>
+                            <P>Philips</P>
+                            <P>Kangaroo</P>
+                            <P>Panasonic</P>
+                            <P>Sunhouse</P>
+                            <P>Sharp</P>
+                            <P>Cosori</P>
+                            <P>Bear</P>
+                            <P>Bluestone</P>
+                            <P>Dreame</P>
+                            <P>Kalite</P>
+                            <P>Xiaomi</P>
+                            <P>Cuckoo</P>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+            <div onclick="pkFunction()" class="Pk">
+                <span class="6">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqklEQVR4nO3ZQQrCQBBE0e8JDdJDFvHsLgwKQW8QQQmM4MLsq5t6ILhM8SeQKJhJacATuAEDSR2AB/DunxUYSWr5GZJ6zKlffIkx8WfMCziTUHiMqHAZUeEyosJlRLmMKpdR5TKqSpUZd17OBoqMmSky5EoyJY5W27nZJxLxCBUuocIlVLiECpdQ4RIqmh8ARbQKJY5V/gydK4zY3CuM+B6t7UeCS/9uVtUHEhTs/ZXHkMQAAAAASUVORK5CYII="; width="15px"; height="15px">
+                </span>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAsElEQVR4nO2XQQrCMBBF36qHsjtXIl6rVs+oq2rq3guMDEyhlNCWkglY8mAgTAKPfEJI4I+ogDvQAwForefODZBJXXOIg8kOQG1j7bnzMVk9EmvPjRPwisQ8VGdrktPNSMfy5IjV1vnNFPGUEnUypJzqXIfrueLmeniIjyvEusYFWSg3pIjZe9RhRvr2FF+Ab0SqvTN7fWWGyCvTNeaBNhJ1QwYqk+vOdacqzfKFScIPv8Se95/v9uoAAAAASUVORK5CYII="; width="24px"; height="24px">
+                <p>Phụ kiên</p>
+                <div  id="pk" class="elementOfpk">
+
+                    <div id="bodyOfPk" class="PkOfprops"> 
+                        <div class="PKDD">
+                            <h4>Phụ kiện di động</h4>
+                            <p>Phụ kiện Apple</p>
+                            <p>Dán màn hình</p>
+                            <p>Ốp lưng - Bao da</p>
+                            <p>Thẻ nhớ</p>
+                            <p>Apple Care+</p>
+                            <p>Samsung Care+</p>
+                            <p>Sim 4G</p>
+                            <p>Cáp, sạc</p>
+                            <p>Pin dự phòng</p>
+                            <p>Phụ kiện tiện ích</p>
+                        </div>
+                        <div class="PKL">
+                            <h4>Phụ kiện Laptop</h4>
+                            <p>Chuột, bàn phím</p>
+                            <p>Balo Laptop | Túi chống sốc</p>
+                            <p>Phần mềm</p>
+                            <p>Webcam</p>
+                            <p>Giá đỡ</p>
+                            <p>Thảm, lót chuột</p>
+                        </div>
+                        <div class="PKK">
+                            <h4>Phụ kiện khác</h4>
+                            <p>Thiết bị phát sóng WiFi</p>
+                            <p>Bộ phát wifi di động</p>
+                            <p>Bộ kích sóng WiFi</p>
+                            <p>Xem tất cả thiết bị mạng</p>
+                        </div>
+                        <div class="TBLT">
+                            <h4>Thiết bị lưu trữ</h4>
+                            <p>Thiết bị phát sóng WiFi</p>
+                            <p>Bộ phát wifi di động</p>
+                            <p>Bộ kích sóng WiFi</p>
+                            <p>Xem tất cả thiết bị mạng</p>
+                        </div>
+                        <div class="PKH">
+                            <h4>Phụ kiện hot</h4>
+                            <p>Thiết bị phát sóng WiFi</p>
+                            <p>Bộ phát wifi di động</p>
+                            <p>Bộ kích sóng WiFi</p>
+                            <p>Xem tất cả thiết bị mạng</p>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+            <div onclick="pcFunction()" class="pc">
+                <span class="7">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqklEQVR4nO3ZQQrCQBBE0e8JDdJDFvHsLgwKQW8QQQmM4MLsq5t6ILhM8SeQKJhJacATuAEDSR2AB/DunxUYSWr5GZJ6zKlffIkx8WfMCziTUHiMqHAZUeEyosJlRLmMKpdR5TKqSpUZd17OBoqMmSky5EoyJY5W27nZJxLxCBUuocIlVLiECpdQ4RIqmh8ARbQKJY5V/gydK4zY3CuM+B6t7UeCS/9uVtUHEhTs/ZXHkMQAAAAASUVORK5CYII="; width="15px"; height="15px">
+                </span>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABAklEQVR4nO2aQQrCMBREZ+mV9ASKVxMXesNUFPQQI8LPQvEvkp82tc6DLApNyDQvCaQBhBiNLYABAAtLsroZdiop9yMFG+kdhLkf+aGU2nqtYe6HguB9RCafE2ONyORz4tfVovMBFYQakRiUWg5SKwilloPUCkKp5SC1glBqOUitIJRaDlIrCKWWg9QKQqn1b2pxKQd0XMqRaS+oIIZGpDGUWjNYfvltOfZc3wO42B/f3YyDpLwce0EGZwPygqDinaYLBpceZGdhPndSr94KwBnAI6DJHcDJ2moWpLTesaH3h55Bbva8Rj0ba+PaM0gr31nbzlzvoqCU10SuCTP27aAinrLbsItuETpBAAAAAElFTkSuQmCC"; width="24px"; height="24px">
+                <p>PC,Màn hình</p>
+                <div  id="pc" class="elementOfpc">
+
+                    <div id="bodyOfLap" class="LapOfprops"> 
+                        <div class="CTH">
+                            <h4>Chọn theo hãng</h4>
+                            <p>Mac</p>
+                            <p>ASUS</p>
+                            <p>Lenovo</p>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+            <div onclick="TiviFunction()" class="Tivi">
+                <span class="8">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqklEQVR4nO3ZQQrCQBBE0e8JDdJDFvHsLgwKQW8QQQmM4MLsq5t6ILhM8SeQKJhJacATuAEDSR2AB/DunxUYSWr5GZJ6zKlffIkx8WfMCziTUHiMqHAZUeEyosJlRLmMKpdR5TKqSpUZd17OBoqMmSky5EoyJY5W27nZJxLxCBUuocIlVLiECpdQ4RIqmh8ARbQKJY5V/gydK4zY3CuM+B6t7UeCS/9uVtUHEhTs/ZXHkMQAAAAASUVORK5CYII="; width="15px"; height="15px">
+                </span>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD4ElEQVR4nO2baYiOURTHf8wwyFKasQzGKBONJWHIEpFtxj5ZywdRiFDKGvKBUpYo+WILGfEB5YM95hORqckHZacIyS770tV563R7l3lm3meZ2/uvU+9znts99/zfu5x773kggwzqgkJgFjAd6Ehw6ATMAGYCnQkBTYFDwB/gr8gvYA/Q2Ee7OcBe4Leya37vB5oQIE6oBtiyz0e7B5PYrSAg9FdGH0hXNMPgiehMr+jug91i1eMeS/efBtxX7elLAFilDA5T+lKlX+yD3SWq/nFKP1zpVxIA1iuDPZR+gNIv9cHuMlV/idL3VHrTNt9RqgyeB/JlVr6q9IN9sDtE1X9VbBrbF5R+LAEgC7idZDL6BOT5YDdP6k5k9xbQkIBQAFQnaYyZmLqm0V5Xa7KzpVp6RKBoJDPxbmAbMAo4phr1GhiYBjsDpa5YvcbGaGC72DZtyCYiaABsUo39KlFibTEJ+KLq2x1kN68L5gE/VYS4OKQ6QsUY4GMt/j27F30GJlJPUQK8VM6cTBGzm33EUVX+jU9LaqDoAtxVTl0BWsUp1xw4Z4XZRTiC1kClcu6OtWy1B6rU++s+xRKhIgc4rpx8DvSRcPqp0p+S7Xbo6CC7rQVplEXAI+XsO5HY8yMpk06bZhlu48XxXNnv68OO+i4/gC01WYVygXsRaLBfYqLHpKhQhQ9LyNmvHssgOSP4ID79kYOVuMhXZ21HcAvj1R+7OVGhqapQmdr6zgFWR0jKa0GAiS7fi2+nExWarwgYFEcXJdFHYjVF7MzykhcCNkTA2XgyPwwCJoQ8oc0Nm4DOhAvTpgwBZHoA9hDIkpC3SiK+b8C1OGcITg6BbFnWEk2WW10nYKPSvZM9zBngu9KXu0pANvBWnl9Y1/MlMhTMuxuuEtArxZVY7OzhtxzhO0dAf/W8Ik75A+p9MxcJaKXGepX8y3pb/0rePRSdcwRgnSDfBBYCy61TpzUuE9DGctaWSpWy4yQBBm1l+ftlXcntsg5XnSVAj/thkkdg7hhsOE9AKmQIwMEeUCB5CYlkpAwNJwkoUuFuMnnlaiDUu4aXNyavqKWLBMQ2PcmuxUy5bv9LOkqAF2QIINMDcO5AZKc4lEguqvxh53rAiBqsADFp6yIBLcSZhynkiOQFOEeAV9SZgLVpTl3xKlvDIGC9h3EWpMzzg4DZyoBJKECuofUHSlGQ75Jd5gUNVZbI2USFihN8gFQYgVQXLSaTxSsmK992JCt42SKhLAIO10WGAuusDy2SpvAXAM8i0M39EnNXkBLtJKnZpTzBn5Ii5+nDinxgSshLXzpksot5xxmQJvwD9dhNEIvS7TsAAAAASUVORK5CYII="; width="24px"; height="24px">
+                <p>Tivi</p>
+                <div  id="Tivi" class="elementOfTivi">
+
+                    <div id="bodyOfLap" class="LapOfprops"> 
+                        <div class="CTH">
+                            <h4>Chọn theo hãng</h4>
+                            <p>Mac</p>
+                            <p>ASUS</p>
+                            <p>Lenovo</p>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+            <div onclick="switchFunction()" class="switch">
+                <span class="9">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqklEQVR4nO3ZQQrCQBBE0e8JDdJDFvHsLgwKQW8QQQmM4MLsq5t6ILhM8SeQKJhJacATuAEDSR2AB/DunxUYSWr5GZJ6zKlffIkx8WfMCziTUHiMqHAZUeEyosJlRLmMKpdR5TKqSpUZd17OBoqMmSky5EoyJY5W27nZJxLxCBUuocIlVLiECpdQ4RIqmh8ARbQKJY5V/gydK4zY3CuM+B6t7UeCS/9uVtUHEhTs/ZXHkMQAAAAASUVORK5CYII="; width="15px"; height="15px">
+                </span>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD40lEQVR4nO2bS08UQRDHf8tDiGdZT0YS8eQrAh/CB9GrguJtiV7MAgGJj0xMNBoVREzUg6jxEcWbRBPjN/AFegRMDPi8QCI+ogfGtKlN2s6wLLPTM7PZ+Scdlpmeqpqa6urq6i5YGimgEWgDskCvpZYVHo3CM3KsBgaAj4AbcvsA9APpKF48BXQD8xG8uNm+AZ1hWkQtcM9DkC/AffkqZyy1fuHx1YP/HaDG9sunPF7+NbANqCA8KF7bgTEPJVi1hG6D4SBQRXRQvIcMmdRwsIK0jDf95eOCy5pc8+KcA8eAYfZ+v3yDWJI5xXXLPT9Qsoxr8p0nYKSMqU6Neb+YyuPRJ4qgu0OjMxO0L2g2vH0xDm/SkgIqjdlBBUuBoVUjrKahYqDM/LjHFHcMWFck7RFNzj1Y8v7niC8uaHJ2BUnY0Qir33GFNTmdRAEkFuAmQ4DEB7iJEySZBRzii7KfBvdps1VbSWg2YKTkxVuDXgw5JaIAa3ASBZBYgBvDIbAS2AzsBtqBjJFlysh1dX+T9C/ZIVApiRm1NB+VjRG/GyqjslxuFrqxVsB64TltaWPlsyR4N8ZNAfXAQ2Ahj/C/JY32FLgOXDGyTOr/Ybk/Kf0Xo7Ug/OrjoIAu4JeHkLPAbaBDxnRB5quhUp7rEDqzHjx+yiZsJAqoAC55fJnHkvVdETA/RW+n0DctbVBP/johKeCoIcRzYCvhQPF5YfA/EqYC0mJ+OT5qTFcTLhS/G5oMP4C6sBRwQOPxJsI9R6WEV5os7WEpoE/jofxAlDirydIXhQW8jcD8c6iWvc+cLPvDUkCdjLkcn+GIfMBNTYbvwKowZwF9GLjilQPd48uDJuClwb8nijjgokdw8gRosRQHtAh9k+eAnlRxQo4Es8aUmGtzwF3gILDFx0xRJc8dEjpzi0SCh+OwFlgru7351gJ/5LzBMxm7V421wDXgltx/J/3zrQVGhG+sVoNrZG3/vogVX772SZTVEPd8QIWEq2p4PJLlcT7rWOwrT8vzWaFX0GEPJwQFNIg5Ty3jrFCtrON3wb+UeEY8d6/8zch1dX+D9PclixOCAno0HieJFifMqdBJIkGSSNBNIkGSSNBNIkGSSNApx0iwy+ZB5FKIBPcGeFS2JCPBpgAPS5dkJJgyNiNVuUpZ5QSRgqXcxTELaetY5wS9SmZUrU7Z5ARz6DQ6DAVsCbHNCeaQktI0veO4bFwud6e2pHKCOmo8lOBKucoD8RWF1AEvVSQVq5yglyVkDZ/gp00UeELktMX6ZEX3lN+KtbSUqcxYVEAsIkGWgLIIRUxFjIpwIXXAQRRJ2YoE/8NfmTuMCnnjLdcAAAAASUVORK5CYII="; width="24px"; height="24px">
+                <p>Thu cũ đổi mới</p>
+                <div  id="switch" class="elementOfswitch">
+
+                    <div id="bodyOfLap" class="LapOfprops"> 
+                        <div class="CTH">
+                            <h4>Chọn theo hãng</h4>
+                            <p>Mac</p>
+                            <p>ASUS</p>
+                            <p>Lenovo</p>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+            <div onclick="hangcuFunction()"  class="hangcu">
+                <span class="10">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqklEQVR4nO3ZQQrCQBBE0e8JDdJDFvHsLgwKQW8QQQmM4MLsq5t6ILhM8SeQKJhJacATuAEDSR2AB/DunxUYSWr5GZJ6zKlffIkx8WfMCziTUHiMqHAZUeEyosJlRLmMKpdR5TKqSpUZd17OBoqMmSky5EoyJY5W27nZJxLxCBUuocIlVLiECpdQ4RIqmh8ARbQKJY5V/gydK4zY3CuM+B6t7UeCS/9uVtUHEhTs/ZXHkMQAAAAASUVORK5CYII="; width="15px"; height="15px">
+                </span>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB/ElEQVR4nO2by0oDQRBFzw/oOrrXxL2PhfFrNFkEg6AEXwQkK0HyM+rOxw9I/kBXojuNxKViS8MEmjAE59HzMPdC7Ya61TXdt4qeKUiGFaAJHOZklrtGDqgB94ApiN0B1awWvwF8FGDRkzYE1n0vfh54dUi/gEvgAjjP2CznVRDDOJ4XYM5nAk4dsjdglfxh3/q7E9exT7KBQ7RNcdBw4nrwSfTpEFUoDipOXCOfRMaxoiGT2IwSgHaA0RFAGmAoHiSCqAqgMoj6ANQIUXal/U8iuAx0Qq6yWiHPtkKe6wQ+fMQWC1FJnqbc4Ezz7dqjp9hiISrJtCusJM+mEVssKAGktwP6zlnvz+IOMBHMR2yxoASgHYCOANIAJIJEF01VAVQGUR+AGiHUCTJDrfBTChWg1PcBS0A3wV8g3cCHj9hiIROSmFAC0A5ARwBpABJByq60MSERRCKIRBCJIBJBPMKoCqAyaNQHoEbIpKAne8H4jbV2WfTJpESyNeHrB6gXJLZMSA5C7v72y5CAkUOykMBPPWQHbCbwt5jVyMzAIdpJ6KsdjLlZ203oq5nV0NTJxNic90HFPw5yumNzR74HJ18cMju0eA30cpgb7gXc3048z74HJwne+jDFT99pmY1pjYxQBW4LsOix3UT4pTb1RDSAsxxmhy2n5U608F/VWnpFQ4/pSAAAAABJRU5ErkJggg=="; width="24px"; height="24px"></thuhien>
+                <p>Hàng cũ</p>
+                <div  id="hangcu" class="elementOfhangcu">
+
+                    <div id="bodyOfLap" class="LapOfprops"> 
+                        <div class="CTH">
+                            <h4>Chọn theo hãng</h4>
+                            <p>Mac</p>
+                            <p>ASUS</p>
+                            <p>Lenovo</p>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+            <div onclick="saleFunction()" class="sale">
+                <span class="11">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqklEQVR4nO3ZQQrCQBBE0e8JDdJDFvHsLgwKQW8QQQmM4MLsq5t6ILhM8SeQKJhJacATuAEDSR2AB/DunxUYSWr5GZJ6zKlffIkx8WfMCziTUHiMqHAZUeEyosJlRLmMKpdR5TKqSpUZd17OBoqMmSky5EoyJY5W27nZJxLxCBUuocIlVLiECpdQ4RIqmh8ARbQKJY5V/gydK4zY3CuM+B6t7UeCS/9uVtUHEhTs/ZXHkMQAAAAASUVORK5CYII="; width="15px"; height="15px">
+                </span>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE7ElEQVR4nO2baaxdUxTHf/d5+tpSglJ8QLSv1BRBEURUjFGkCaKmlAqpxDzVEFFDDEk1hiZqiJYiMcQHWoIPpEWkKfKIohqtIWr6wEOFekdWsk6yrZxz7t5nuudx/8k/J7ln73X2XmeftdewL3TRRRdddNFxbA6cBzwCPAPMB2YB2/M/wPnAd0CUwI3A88BE/qO4NWXiln8CtwCbeMiUNpOAXhqO080kPwFuAKYD1wCvAEOmzevA2AyZo7RNpP0bi22AH5yJyTIfmdBub+ANo4SPUmzDpsASp92vQIuG4mpnoKv1zaWhB5gN/G1WyzjT7kKjqEtpKEYAnzsDneHZb7ragrjf22bVnOrcm0ND0QKedAY6qFugL6aZlfCEuX8ccDQNxlyzTGXPD8XlRobvCuo4rkzY3m7MKetRR8bPwC40HGcmbGnCk3PKk8/mM0fOqzQYxxjj5XL/AnIPBP5yZIl9aBwOUEOX5uHtWVD+/Y6sdcBoGoQJGT5+zP6Cz9jKOFSyFTYC48xen8YyjNc5KusPYB8agDHASs8gRz6RMrCHhzInA/cCHwN3U6GX95rn5IUnZri/U4GHVJlrgLfUj9g3YDw7A9cDqxKevVNJc/7XoJ8KmLzwggQ5vSaosZTtdFGGB7klMFODKNdrdLnMM7QOwj2BkxfeliDnIs++K/Rzc3EtsCGl/S/AY8AUfVmlwo3uQvhygqw4nvehjQV+S8goLQXOqHKLPDvFy/Phjwkx+7cB/YeMTXjXufd0HTnFYzO8PF+ONzK/DOw/z+k72/n9haonP7mNl+dLWUEukix2FuWtx9jN+V3G1lfV5PuB70uYvPBZI3txYP81GQo8qorJb2sisaIcNJmdmYH93zPje9C5d3PZk99CHxiVTHF6Yuygbq1vX9naklzj0jPDIwK3qBAuNM96OKDv8abveLPLlIIe3Vaiiij799bGxvisgmUpqe/YDgx02tGJAniFeeasNu3XA7umjHdH4Nyy/IBJgd9kXq5OcFHnp7SV4sju1IR5NUw+KzoUo/ah+vgrtQDSl2Kgp+i1VHzh8ebm6rWoAgYKBCoDKmODltpOaVNx8oabeMxyZftLWgXyxkMhdcHfUyJACZhO0Da5tr6hNgN2UYYC1uZ0YU9q46P8pAmWI0NzAatqVoDwdvJD4oEX28j/CjjEV+CCDihAPruDCyjBHfM7uqrsMySr5IWJbexAFQqIS+B5kxhuXvI0dZYO1TrCei2nBVWlbFHT5WGOwxGVzMU5Dzmsc2TYJGorj0Hs8QhTy8gNJPHOwLHuZcZU2lmhlpai21V7quDFAeOc4/R7iQrQCxyusXaVAZLlHR5O0iiTUjuLGhA5PEgzsDcBj+sxlrIyR3GeLyvAuc9p+02VKTEX7gDTIP75fmqRr9MDDm8CX+dQwqAerBhriiEPmHZy8pSmKCALo7WoOU3D7gWaeFmbUdmJc/7ipL2fUAyxecZGKyALfRr2SsrsKs+A67m6ln4ZCtgMOEKvvrGJLO3lCc7ZB3oUp3ZEBRSw3ElthWKMfjpyVGY7OoiogALiSFOuwxZRAQVUaT9qQ9RVAN0VEHU/Abo2IKrZfjQGG51JhHhgI41bO2zxqTORJXpQyYdLnX7i0w9bXFJzwqNxaAF3tYnc0jikicrG/rmJAMg/vC7THJ4Ppa306Sj+Ae8ekqp0hBu3AAAAAElFTkSuQmCC"; width="24px"; height="24px"></thuhien>
+                <p>Khuyến mãi</p>
+                <div  id="sale" class="elementOfsale">
+
+                    <div id="bodyOfLap" class="LapOfprops"> 
+                        <div class="CTH">
+                            <h4>Chọn theo hãng</h4>
+                            <p>Mac</p>
+                            <p>ASUS</p>
+                            <p>Lenovo</p>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+            <div onclick="newsFunction()" class="news">
+                <span class="12">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqklEQVR4nO3ZQQrCQBBE0e8JDdJDFvHsLgwKQW8QQQmM4MLsq5t6ILhM8SeQKJhJacATuAEDSR2AB/DunxUYSWr5GZJ6zKlffIkx8WfMCziTUHiMqHAZUeEyosJlRLmMKpdR5TKqSpUZd17OBoqMmSky5EoyJY5W27nZJxLxCBUuocIlVLiECpdQ4RIqmh8ARbQKJY5V/gydK4zY3CuM+B6t7UeCS/9uVtUHEhTs/ZXHkMQAAAAASUVORK5CYII="; width="15px"; height="15px">
+                </span>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqklEQVR4nO2YQQrDMAwE910l+XyTvGt7DyW2QcGymAEdfDBoWBaMJQAY5ZLk5HP0iHiRaTJ7QSNyo3QiH0nbwDmtyCZpHzinFXHCaTJ7QSNyo0wiR4Il3ZhvjwjAS/hPma6g53ZEsd1b9qfLUUssLxKBERGJqGxHXEUkAiMiElHZjriKSARGRCSish1xFZEIjIhIROk6cgZ9pE0XyYQRWT0RJ58m/MYDFOQHaml2OiIY5t0AAAAASUVORK5CYII="; width="24px"; height="24px"></thuhien>
+                <p>Tin công nghệ</p>
+                <div  id="news" class="elementOfnews">
+
+                    <div id="bodyOfLap" class="LapOfprops"> 
+                        <div class="CTH">
+                            <h4>Chọn theo hãng</h4>
+                            <p>Mac</p>
+                            <p>ASUS</p>
+                            <p>Lenovo</p>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+</body>
+<script src="./1.js">
+</script>
+</html>

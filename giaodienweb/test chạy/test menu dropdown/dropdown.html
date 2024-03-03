@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .dropdown {
+  
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+  z-index: 1;
+} 
+.test{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.2) ;
+    position: fixed;
+    display: none;
+}
+.dropdown-fixed{
+    display: none;
+}
+
+.show {display: block;}
+.try {display: block;}
+
+/* phải set 2 div thì khi hover mới k tắt đi */
+.dropdown-fixed{
+    display: none;
+}
+/* phải set display rời ra ngoài thì mới hover đươc submenu */
+    </style>
+</head>
+<body>
+   
+        <div onclick="testFunction()" class="btnDanhMuc"> Danh Mục
+         
+                <div class="test" id="nen">
+                    <div  id="fix" class="dropdown">
+                        <div class="dt">
+                            <span class="dt">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqklEQVR4nO3ZQQrCQBBE0e8JDdJDFvHsLgwKQW8QQQmM4MLsq5t6ILhM8SeQKJhJacATuAEDSR2AB/DunxUYSWr5GZJ6zKlffIkx8WfMCziTUHiMqHAZUeEyosJlRLmMKpdR5TKqSpUZd17OBoqMmSky5EoyJY5W27nZJxLxCBUuocIlVLiECpdQ4RIqmh8ARbQKJY5V/gydK4zY3CuM+B6t7UeCS/9uVtUHEhTs/ZXHkMQAAAAASUVORK5CYII="; width="15px"; height="15px">
+                            </span>
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqklEQVR4nO2XXQrCMBCEv6feyXoBPZhWr6V4kdr0GpHAFkRo3JL1RWZgHwLZnSE/kywI39EBV2AGsjMSMFhuMy4biD/jHCEgWbGdjZ8VwtHm9G8r0YxsseC4IqKQHyp5YQK8kICsLUCHEF1DZETZ7ZsVyIqzHiP0HKMPCWuG8gDuwf6xqVAhv/1aQLJC5avtxd5ypggBQ0NjcooQ0JmIZSU8MRl5SGvGX+MFk1Oo8Dc0FOoAAAAASUVORK5CYII="; width="24px"; height="24px">
+                            <p>Điện thoai,Tablet</p>
+                            
+                        </div>
+                        
+                
+                        
+                    </div>
+                </div>
+        </div>
+        
+                
+            
+        
+        
+    </div>
+</body>
+<script>
+
+function myFunction() {
+    document.getElementById("fixed").classList.toggle("show");
+  
+}
+function testFunction() {
+    document.getElementById("nen").classList.toggle("show");
+ 
+}
+
+</script>
+</html>

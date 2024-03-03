@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+.dt:hover .dropdown-fixed{
+    display: block;
+}
+.lap:hover .dropdown-Lap{
+    display: block;
+    
+}
+.dropdown-Lap{
+    display: none;
+}
+
+.hover :hover {
+    background-color: #ffffff ;
+    
+}
+
+.dropdown-fixed{
+    display: none;
+}
+.show {display: block;}
+
+
+.dropdown-fixed{
+    position: fixed;
+    background-color: #ea4949;
+    height: 435px;
+    width: 925px;
+    margin: -30px 0 0 270px;
+    /* display: none; */
+    border-radius: 10px ;
+    
+    overflow: auto;
+    
+    
+}
+
+
+.dropdown-Lap{
+    position: fixed;
+    background-color: #ba2f2f;
+    height: 435px;
+    width: 925px;
+    margin: -65px 0 0 270px;
+    /* display: none; */
+    border-radius: 10px ;
+    z-index: 1;
+    overflow: auto;
+    
+    
+}
+.dropdown3{
+    display: none;
+}
+.dropdown4{
+    display: none;
+}
+.dropdown5{
+    display: none;
+}
+.elementOfpk{
+    display: none;
+}
+.elementOfpc{
+    display: none;
+}
+/* .dropdown7{
+    display: none;
+}
+.dropdown8{
+    display: none;
+}
+.dropdown9{
+    display: none;
+} */
+
+.dropdown3{
+    position: fixed;
+    background-color: #337328;
+    height: 435px;
+    width: 925px;
+    margin: -65px 0 0 270px;
+    /* display: none; */
+    border-radius: 10px ;
+    z-index: 1;
+    overflow: auto;
+    
+    
+}
+.dropdown4{
+    position: fixed;
+    background-color: #2b5eca;
+    height: 445px;
+    width: 925px;
+    margin: -65px 0 0 270px;
+    display: none;
+    border-radius: 10px ;
+    z-index: 1;
+    overflow: auto;
+    
+    
+}
+.dropdown5{
+    position: fixed;
+    background-color: #cba4cc;
+    height: 435px;
+    width: 925px;
+    margin: -65px 0 0 270px;
+    display: none;
+    border-radius: 10px ;
+    z-index: 1;
+    overflow: auto;
+    
+    
+}
+
+.elementOfpk{
+    position: fixed;
+    background-color: #df5a32;
+    height: 435px;
+    width: 925px;
+    margin: -65px 0 0 270px;
+    display: none;
+    border-radius: 10px ;
+    z-index: 1;
+    overflow: auto;
+    
+    
+}
+
+.elementOfpc{
+    position: fixed;
+    background-color: #108195;
+    height: 435px;
+    width: 925px;
+    margin: -65px 0 0 270px;
+    display: none;
+    border-radius: 10px ;
+    z-index: 1;
+    overflow: auto;
+    
+    
+}
+
+.Lap3 {display: block;}
+.Lap4 {display: block;}
+.Lap5 {display: block;}
+.pk {display: block;}
+.pc {display: block;}
+
+
+/* .Lap{
+    float: left;
+ position: relative;
+} */
+ /* chỉ thêm nếu muốn dóng sang trái */
+
+
+ .Lap:hover .dropdown-Lap{
+    display: block;
+}
+ .Lap:hover .dropdown-Lap{
+    display: block;
+}
+ 
+
+
+    </style>
+</head>
+<body>
+    <div   class="dt">
+          <button>Điện thoai,Tablet</button>
+        <div  id="fixed" class="dropdown-fixed">
+            
+            <div id="bodyOfdt" class="hover"> 
+                <ul class="THDT">
+                    <li>Thương hiệu điện thoại</li>
+                    <li>iPhone</li>
+                    <li>Samsung</li>
+                    <li>Xiaomi</li>
+                    <li>OPPO</li>
+            </ul>     
+        </div>   
+        
+    </div>
+    <div onclick="myFunction()" class="Lap">
+         
+           <button>Laptop</button>
+        <div  id="try" class="dropdown-Lap">
+            
+            <div id="bodyOfLap" class="LapOfprops"> 
+                <div class="CTH">
+                    <h4>Chọn theo hãng</h4>
+                    <p>Mac</p>
+                    <p>ASUS</p>
+                    <p>Lenovo</p>
+                </div>
+            </div>                
+        </div>
+    </div>
+    <div onclick="thirstFunction()" class="Lap3">
+         
+           <button>Laptop3</button>
+        <div  id="thirst" class="dropdown3">
+            
+            <div id="bodyOfLap" class="LapOfprops"> 
+                <div class="CTH">
+                    <h4>Chọn theo hãng</h4>
+                    <p>Mac</p>
+                    <p>ASUS</p>
+                    <p>Lenovo</p>
+                </div>
+            </div>                
+        </div>
+    </div>
+    <div onclick="fourthFunction()" class="Lap4">
+         
+           <button>Laptop4</button>
+        <div  id="fourth" class="dropdown4">
+            
+            <div id="bodyOfLap" class="lapof4"> 
+                <div class="CTH">
+                    <h4>Chọn theo hãng</h4>
+                    <p>Mac</p>
+                    <p>ASUS</p>
+                    <p>Lenovo</p>
+                </div>
+            </div>                
+        </div>
+    </div>
+    <div onclick="fifthFunction()" class="Lap5">
+         
+           <button>Laptop5</button>
+        <div  id="fifth" class="dropdown5">
+            
+            <div id="bodyOfLap" class="LapOfprops"> 
+                <div class="CTH">
+                    <h4>Chọn theo hãng</h4>
+                    <p>Mac</p>
+                    <p>ASUS</p>
+                    <p>Lenovo</p>
+                </div>
+            </div>                
+        </div>
+    </div>
+
+
+    <div onclick="pkFunction()" class="pk">
+         
+           <button>phụ kiện</button>
+        <div  id="pk" class="elementOfpk">
+            
+            <div id="bodyOfLap" class="LapOfprops"> 
+                <div class="CTH">
+                    <h4>Chọn theo hãng</h4>
+                    <p>Mac</p>
+                    <p>ASUS</p>
+                    <p>Lenovo</p>
+                </div>
+            </div>                
+        </div>
+    </div>
+    
+
+    <div onclick="pcFunction()" class="pc">
+         
+           <button>pc,màn hình</button>
+        <div  id="pc" class="elementOfpc">
+            
+            <div id="bodyOfLap" class="LapOfprops"> 
+                <div class="CTH">
+                    <h4>Chọn theo hãng</h4>
+                    <p>Mac</p>
+                    <p>ASUS</p>
+                    <p>Lenovo</p>
+                </div>
+            </div>                
+        </div>
+    </div>
+    
+   
+    
+</body>
+
+</style>
+<script>
+
+function myFunction() {
+    document.getElementById("try").classList.toggle("show");
+}
+function thirstFunction() {
+    document.getElementById("thirst").classList.toggle("Lap3");
+}
+function fourthFunction() {
+    document.getElementById("fourth").classList.toggle("Lap4");
+}
+function fifthFunction() {
+    document.getElementById("fifth").classList.toggle("Lap5");
+}
+function pkFunction() {
+    document.getElementById("pk").classList.toggle("pk");
+}
+function pcFunction() {
+    document.getElementById("pc").classList.toggle("pc");
+}
+
+</script>
+</html>

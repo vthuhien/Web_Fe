@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:  #bfe1c4;
+    height: 100vh;
+    font: 14px/26px 'Bungee', Helvetica, Arial, sans-serif;
+    color: black;
+    text-transform: uppercase;
+}
+.page{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+header{
+    font-size: 24px;
+    line-height: 48px;
+    margin: 40px auto;
+}
+h4 {
+    font-size: 21px;
+    font-family: 'Bungee', cursive;
+}
+span{
+    font-size: 35px;
+    margin: 0px auto 30px;
+}
+h4 #clock{
+    display: block;
+
+}
+h1{
+    font-family: 'Bungee Shade', cursive;
+  }
+#timeEvent{
+    
+        font: 2em/1em 'Open Sans', sans-serif;
+        -webkit-text-stroke: 1px black;
+        
+        text-shadow: 2px 2px #000;
+        margin: -80px 0 100px 0;
+        color: #fff;
+      
+}
+#setWakeupTime, #setNapTime, #setLunchTime{
+    padding: 10px 0;
+}
+button{
+    width: 300px;
+    height: 70px;
+    background-color: #000;
+    border-radius: 10px;
+    outline: none;
+    font: 2em/1em 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 25px;
+    margin: 20px auto;
+}
